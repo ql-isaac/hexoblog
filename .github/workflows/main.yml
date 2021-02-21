@@ -54,8 +54,8 @@ jobs:
           git config user.email "${{secrets.GIT_EMAIL}}"
           git add .
           git commit -m "Site updated"
-          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:master
-          git push --force --quiet "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
+          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF_BUTTERFLY}}" master:master
+          git push --force --quiet "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_BUTTERFLY}}" master:master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -102,5 +102,5 @@ jobs:
           git config user.email "${{secrets.GIT_EMAIL}}"
           git add .
           git commit -m "Site updated"
-          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF}}" master:master
-          git push --force --quiet "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
+          git push --force --quiet "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF_NEXT}}" master:master
+          git push --force --quiet "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_NEXT}}" master:master
