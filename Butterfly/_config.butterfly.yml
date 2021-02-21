@@ -204,7 +204,7 @@ post_edit:
   enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
   # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url: https://github.com/ql-isaac/_posts/edit/main/
+  url: https://github.com/ql-isaac/HexoBlog/edit/main/_posts/
 
 # Related Articles
 related_post:

@@ -47,7 +47,6 @@ jobs:
       - name: Deploy my HexoBlog
         run: |
           cp -r _posts/ NexT/source/_posts/
-          cd NexT/
           hexo clean && hexo g
           cd public/
           git init

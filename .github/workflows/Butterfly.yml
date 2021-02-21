@@ -47,7 +47,6 @@ jobs:
       - name: Deploy my HexoBlog
         run: |
           cp -r _posts/ Butterfly/source/_posts/
-          cd Butterfly/
           hexo clean && hexo g
           cd public/
           git init
