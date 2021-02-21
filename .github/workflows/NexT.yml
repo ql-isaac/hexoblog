@@ -41,6 +41,7 @@ jobs:
       - name: Install dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: |
+          cd NexT/
           npm install
       
       - name: Deploy my HexoBlog
