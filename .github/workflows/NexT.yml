@@ -36,7 +36,7 @@ jobs:
         id: cache-dependencies
         with:
           path: NexT/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/NexT/package-lock.json')}}
+          key: ${{ runner.os }}-${{ hashFiles('**/NexT/package.json')}}
       
       - name: Install dependencies
         if: steps.cache-dependencies.outputs.cache-hit != 'true'
