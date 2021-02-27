@@ -22,11 +22,7 @@ categories:
 
 ![Git官网](https://image.ql-isaac.cn/Git-for-Windows/Git官网.png)
 
-{% note warning %}
-
-这里会跳转到IE浏览器，呵呵，赶紧在所有设置-应用-默认应用中把Web浏览器设置成Microsoft Edge再打开Git官网。
-
-{% endnote %}
+　　这里会跳转到IE浏览器，呵呵，赶紧在所有设置-应用-默认应用中把Web浏览器设置成Microsoft Edge再打开Git官网。
 
 ![Microsoft Edge](https://image.ql-isaac.cn/Git-for-Windows/Microsoft-Edge.png)
 

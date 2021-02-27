@@ -1013,8 +1013,8 @@ note:
 
 ## 参考
 
-https://theme-next.js.org/
+[NexT主题文档](https://theme-next.js.org/)
 
-https://lixint.github.io/
+[lixint](https://lixint.github.io/)
 
-http://www.dragonbaby308.com/
+[dragonbaby308](http://www.dragonbaby308.com/)

@@ -9,8 +9,6 @@ categories:
  - Oracle数据库从入门到精通
 ---
 
-　　参考视频教程：https://www.bilibili.com/video/BV1NJ411M7fE?p=80
-
 <!-- more -->
 
 ## 下载Oracle Database 11g Release 2
@@ -338,3 +336,6 @@ DESC SALGRADE;
 | SAL   | 基本工资 | NUMBER       |              |      |
 | COMM  | 佣金     | NUMBER       |              |      |
 
+## 参考
+
+[【李兴华带你玩编程】Oracle数据库小白教程（bilibili）](https://www.bilibili.com/video/BV1NJ411M7fE?p=80)

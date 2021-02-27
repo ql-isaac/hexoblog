@@ -578,6 +578,6 @@ int main(){
 
 ## 参考视频
 
-https://www.bilibili.com/video/av15267247
+[翁凯C语言（bilibili）](https://www.bilibili.com/video/BV19W411B7w1)
 
-https://www.bilibili.com/video/BV17s411N78s
+[【C语言】《带你学C带你飞》（bilibili）](https://www.bilibili.com/video/BV17s411N78s)
