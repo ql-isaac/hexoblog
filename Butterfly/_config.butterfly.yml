@@ -15,7 +15,6 @@ menu:
   电影: /movies/ || fas fa-video
   游戏: /games/ || fas fa-gamepad
   友链: /link/ || fas fa-link
-  NexT版: https://blog.ql-isaac.cn/ || fa fa-sticky-note
   #关于: /about/ || fas fa-heart
 
 # 友链样式，butterfly为默认样式，volantis为站点卡片样式。
@@ -45,8 +44,11 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/ql-isaac || Github
-  fas fa-envelope: mailto:qinlei.isaac@qq.com || 邮件
+  iconfont icon-boke: https://blog.ql-isaac.cn/ || blog
+  iconfont icon-hudie: https://ql-isaac.cn/ || www
+  iconfont icon-daohang: https://nav.ql-isaac.cn/ || nav
+  iconfont icon-kongjian: https://space.ql-isaac.cn/ || space
+  iconfont icon-youxiang: mailto:834471527@qq.com || mail
 
 # search (搜索)
 # --------------------------------------
@@ -861,7 +863,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+  - <link rel="stylesheet" href="/css/iconfont.css">
   - "<style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style>"
   - <link rel="preconnect" href="https://fonts.gstatic.com">
   - <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">

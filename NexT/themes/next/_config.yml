@@ -131,7 +131,6 @@ menu:
   books: /books || book
   movies: /movies || video-camera
   games: /games || gamepad
-  Butterfly版: https://ql-isaac.cn/ || fa fa-tree
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -185,8 +184,13 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/ql-isaac || github
-  E-Mail: mailto:qinlei.isaac@qq.com || envelope
+  blog: https://blog.ql-isaac.cn/ || sticky-note
+  www: https://ql-isaac.cn/ || quora
+  nav: https://nav.ql-isaac.cn/ || location-arrow
+  space: https://space.ql-isaac.cn/ || codepen
+  mail: 834471527@qq.com || envelope
+  ql-isaac: https://github.com/ql-isaac || github
+  #mailto:qinlei.isaac@qq.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -397,7 +401,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/ql-isaac
+  permalink: https://github.com/ql-isaac/HexoBlog/tree/main/NexT
   title: Follow me on GitHub
 
 
