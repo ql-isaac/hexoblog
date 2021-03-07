@@ -45,7 +45,7 @@ copy:
 #   icon: link || the description
 social:
   iconfont icon-boke: https://blog.ql-isaac.cn/ || blog
-  iconfont icon-hudie: https://ql-isaac.cn/ || www
+  iconfont icon-hudie: / || www
   iconfont icon-daohang: https://nav.ql-isaac.cn/ || nav
   iconfont icon-kongjian: https://space.ql-isaac.cn/ || space
   iconfont icon-youxiang: mailto:834471527@qq.com || mail
@@ -182,7 +182,7 @@ index_post_content:
 toc:
   enable: true
   number: true
-  style_simple: false
+  style_simple: true
 
 post_copyright:
   enable: true

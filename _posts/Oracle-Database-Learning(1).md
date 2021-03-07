@@ -9,6 +9,8 @@ categories:
  - Oracle数据库从入门到精通
 ---
 
+　　Oracle数据库，又名Oracle RDBMS，或简称Oracle。是[甲骨文公司](https://baike.baidu.com/item/甲骨文公司/430115)的一款[关系型数据库管理系统](https://baike.baidu.com/item/关系数据库管理系统/11032386)。它是在数据库领域一直处于领先地位的产品。可以说Oracle数据库是目前世界上最流行的关系型数据库管理系统之一，系统可移植性好、使用方便、功能强，适用于各类大、中、小微机环境。它是一种高效率的、可靠性好的、适应高吞吐量的数据库方案。
+
 <!-- more -->
 
 ## 下载Oracle Database 11g Release 2

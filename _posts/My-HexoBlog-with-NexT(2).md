@@ -23,7 +23,36 @@ categories:
 
 ## Hexo的个性化设置和配置
 
+### 配置博客站点基本信息
+
+　　编辑Hexo的配置文件，个性化配置自己的站点信息即可：
+
+```diff
+# 本行为<存储HexoBlog的文件夹>\_config.yml的第4行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第4行，请以实际情况为准）
+# Site
+-title: Hexo
+-subtitle: ''
+-description: ''
+-keywords:
+-author: John Doe
+-language: en
+-timezone: ''
+```
+
+```diff
+# 本行为<存储HexoBlog的文件夹>\_config.yml的第4行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第4行，请以实际情况为准）
+# Site
++title: ql's HexoBlog
++subtitle: It's a beautiful day!
++description: 学习与生活
++keywords: 学习与生活
++author: ql-isaac
++language: zh-CN
++timezone: 
+```
+
 ### 下载和设置NexT主题
+
 　　原版的landscape主题并不好看，在网上搜索了一下，发现NexT主题是最受欢迎的。
 
 　　在<存储HexoBlog的文件夹>下进入终端，输入如下命令，等待NexT下载到当前文件夹下themes下next下。
@@ -48,34 +77,6 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 +theme: next
-```
-
-### 配置博客站点基本信息
-
-　　编辑Hexo的配置文件，个性化配置自己的站点信息即可：
-
-```diff
-# 本行为<存储HexoBlog的文件夹>\_config.yml的第4行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第4行，请以实际情况为准）
-# Site
--title: Hexo
--subtitle: ''
--description: ''
--keywords:
--author: John Doe
--language: en
--timezone: ''
-```
-
-```diff
-# 本行为<存储HexoBlog的文件夹>\_config.yml的第4行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第4行，请以实际情况为准）
-# Site
-+title: isaac's HexoBlog
-+subtitle: It's a beautiful day!
-+description: 学习与生活
-+keywords: 学习与生活
-+author: isaac
-+language: zh-CN
-+timezone: 
 ```
 
 ## NexT的个性化设置与配置
@@ -131,7 +132,7 @@ footer:
 
 ### 选择主题风格
 
-　　编辑NexT的配置文件（我保持的默认，喜欢其他的风格的话把前面的#去掉即可，注意只能开启一个风格）：
+　　编辑NexT的配置文件（我保持的默认，喜欢其他的风格的话把前面的#去掉即可，注意只能启用一种风格）：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第105行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第105行，请以实际情况为准
