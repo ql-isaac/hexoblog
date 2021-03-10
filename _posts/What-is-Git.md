@@ -11,9 +11,13 @@ categories:
  - Git和GitHub从入门到实践
 ---
 
-　　Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git是Linus Torvalds为了帮助管理Linux内核开发而开发的一个开放源码的分布式版本控制软件。
+　　Git是一个开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目。Git是[林纳斯·托瓦兹](https://www.baidu.com/s?wd=林纳斯·托瓦兹&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)为了帮助管理Linux内核开发而开发的一个开放源码的分布式版本控制软件。
 
 <!-- more -->
+
+## 分布式版本控制系统
+
+　　了解什么是分布式版本控制系统，我想是我们初学Git最好的开始。在[程序设计](https://zh.wikipedia.org/wiki/程式設計)中，分布式版本控制（英语：distributed revision control 或 distributed version control），又称去中心化版本控制（decentralized version control），是一种[版本控制](https://zh.wikipedia.org/wiki/版本控制)的方式，它允许[软件开发者](https://zh.wikipedia.org/wiki/軟體開發者)可以共同参与一个软件开发项目，但是不必在相同的网络系统下工作，在每个开发者电脑中复制一份完整的[代码库](https://zh.wikipedia.org/wiki/代码库)以及完整历史，在无法连接网络时，仍可以进行软件的[分支](https://zh.wikipedia.org/wiki/分支_(版本控制))及[合并](https://zh.wikipedia.org/wiki/合并_(版本控制))。
 
 ## Git的诞生
 
