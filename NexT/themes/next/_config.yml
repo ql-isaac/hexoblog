@@ -79,7 +79,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: true
-    icp: 京ICP备20031573号-1
+    icp: 京 ICP 备 20031573 号 -1
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
@@ -188,9 +188,8 @@ social:
   www: https://ql-isaac.cn/ || quora
   nav: https://nav.ql-isaac.cn/ || location-arrow
   space: https://space.ql-isaac.cn/ || codepen
-  mail: 834471527@qq.com || envelope
-  ql-isaac: https://github.com/ql-isaac || github
-  #mailto:qinlei.isaac@qq.com || envelope
+  Github: https://github.com/ql-isaac || github
+  E-Mail: mailto:834471527@qq.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -377,7 +376,7 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -547,7 +546,7 @@ lazyload: true
 
 # Pangu Support
 # For more information: https://github.com/vinta/pangu.js
-pangu: true
+pangu: false
 
 # Quicklink Support
 # For more information: https://github.com/GoogleChromeLabs/quicklink

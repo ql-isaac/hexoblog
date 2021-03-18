@@ -1,5 +1,5 @@
 ---
-title: 我的HexoBlog的诞生（三）
+title: 我的 HexoBlog 的诞生（三）
 date: 2020-01-24 22:53:39
 cover: https://image.ql-isaac.cn/Blogging-bro.png
 tags:
@@ -8,30 +8,30 @@ tags:
  - Markdown
  - Typora
 categories:
- - 我的HexoBlog的诞生
+ - 我的 HexoBlog 的诞生
 ---
 
-　　本文记录和讲解我的HexoBlog的使用，会持续更新。
+　　本文记录和讲解我的 HexoBlog 的使用，会持续更新。
 
 <!-- more -->
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
 
-## 使用Typora编辑Markdown文件，书写博客文章
+## 使用 Typora 编辑 Markdown 文件，书写博客文章
 
-　　通过执行`hexo new post <自定义md文件名>`，相应Markdown文件将在_posts下生成，那么该如何编辑这种Markdown文件，书写自己的博客文章呢？
+　　通过执行`hexo new post <自定义 md 文件名>`，相应 Markdown 文件将在 _posts 下生成，那么该如何编辑这种 Markdown 文件，书写自己的博客文章呢？
 
 ### Markdown
 
-　　Markdown是一种轻量级的标记语言，类似于HTML，但Markdown的语法十分简单，常用的标记符号也不超过十个。
+　　Markdown 是一种轻量级的标记语言，类似于 HTML，但 Markdown 的语法十分简单，常用的标记符号也不超过十个。
 
 ### Typora
 
-　　Typora是一个Markdown文件阅读器与编辑器，支持MacOS、Windows、Linux平台，可到[Typora 官网](https://typora.io/)下载。
+　　Typora 是一个 Markdown 文件阅读器与编辑器，支持 MacOS、Windows、Linux 平台，可到[ Typora 官网](https://typora.io/)下载。
 
 ### 标题
 
-　　使用`#`可表示1-6级标题。一级标题对应一个#，二级标题对应两个# ，以此类推，如下视频（注意#后面有一个空格）。
+　　使用`#`可表示 1-6 级标题。一级标题对应一个 #，二级标题对应两个 # ，以此类推，如下视频（注意 # 后面有一个空格）。
 
 ```markdown
 # 一级标题
@@ -73,11 +73,11 @@ categories:
 
 ### 开启每篇文章的资源文件夹
 
-　　打开Hexo的配置文件，关键字post_asset_folder查找，将post_asset_folder的值改为true。每次新生成layout（layout默认有 post、page 和 draft三种 ）时都会在对应生成的Markdown文件同级目录下生成一个对应的资源文件夹，可将图片、音乐或视频存入该文件夹，这样，想插入图片、音乐或视频时直接填写图片、音乐或视频的完整文件名即可。
+　　打开 Hexo 的配置文件，关键字 post_asset_folder 查找，将 post_asset_folder 的值改为 true。每次新生成 layout（layout 默认有 post、page 和 draft 三种 ）时都会在对应生成的 Markdown 文件同级目录下生成一个对应的资源文件夹，可将图片、音乐或视频存入该文件夹，这样，想插入图片、音乐或视频时直接填写图片、音乐或视频的完整文件名即可。
 
 ### 在文章内插入视频
 
-　　在[存储HexoBlog的文件夹]下进入终端，输入如下命令安装 hexo-tag-dplayer。
+　　在[存储 HexoBlog 的文件夹]下进入终端，输入如下命令安装  hexo-tag-dplayer。
 
 ```bash
 cnpm install --save hexo-tag-dplayer
