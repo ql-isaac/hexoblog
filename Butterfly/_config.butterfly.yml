@@ -407,7 +407,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <script data-pjax type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279583955'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1279583955%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn"><i class="fa fa-registered" aria-hidden="true"></i> <span>京 ICP 备 20031573 号 -1</span></a></div>
+  custom_text: <div class="js-pjax"><span id="cnzz_stat_icon_1279583955"></span><script src="https://v1.cnzz.com/z_stat.php?id=1279583955&online=2"></script><script src="https://c.cnzz.com/core.php?web_id=1279583955&amp;show=line&amp;online=1&amp;t=z" charset="utf-8"></script></div><div class="icp"><a target="_blank" rel="noopener external nofollow noreferrer" href="https://beian.miit.gov.cn"><i class="fa fa-registered" aria-hidden="true"></i> <span>京 ICP 备 20031573 号 -1</span></a></div>
   copyright: true # Copyright of theme and framework
 
 # Analysis
