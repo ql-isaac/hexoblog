@@ -53,7 +53,7 @@ categories:
 
 　　效果展示：
 
-![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/配置博客站点基本信息.png)
+![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/配置博客站点基本信息.png)
 
 ### 下载和设置 NexT 主题
 
@@ -104,7 +104,7 @@ footer:
 
 　　效果展示：
 
-![image-20210317220238757](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/页脚建站年份.png)
+![image-20210317220238757](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/页脚建站年份.png)
 
 ### 在页脚添加备案信息
 
@@ -140,7 +140,7 @@ footer:
 
 　　效果展示：
 
-![页脚备案信息](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/页脚备案信息.png)
+![页脚备案信息](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/页脚备案信息.png)
 
 ### 选择主题风格
 
@@ -157,13 +157,13 @@ scheme: Muse
 
 　　各种主题风格展示：
 
-![Muse](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/Muse.png)
+![Muse](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Muse.png)
 
-![Mist](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/Mist.png)
+![Mist](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Mist.png)
 
-![Pisces](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/Pisces.png)
+![Pisces](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Pisces.png)
 
-![Gemini](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/Gemini.png)
+![Gemini](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Gemini.png)
 
 ### 添加标签和分类菜单项
 
@@ -535,7 +535,7 @@ links:
   if (Hls.isSupported()) {
     var video2 = document.getElementById('video2');
     var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/CDN2/添加友情链接/添加友情链接.m3u8');
+    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-video-1/添加友情链接/添加友情链接.m3u8');
     hls.attachMedia(video2);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
@@ -561,7 +561,7 @@ links:
 
 　　效果展示：
 
-![tag](https://cdn.jsdelivr.net/gh/ql-isaac/CDN1/My-HexoBlog-with-NexT(2)/tag.png)
+![tag](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/tag.png)
 
 ### 设置文本对齐方式为左对齐
 

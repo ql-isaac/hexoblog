@@ -230,7 +230,7 @@ categories:
   if (Hls.isSupported()) {
     var video1 = document.getElementById('video1');
     var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/CDN2/美化/美化.m3u8');
+    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-video-1/美化/美化.m3u8');
     hls.attachMedia(video1);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();

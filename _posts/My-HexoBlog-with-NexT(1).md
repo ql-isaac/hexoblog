@@ -70,6 +70,7 @@ categories:
     deploy:  
     -  type: ''
     ```
+    
     ```diff
     # 本行为<存储 HexoBlog 的文件夹>\_config.yml 的第 97 行（随着 Hexo 的不断更新，本行对应在你的 _config.yml 中不一定是第 97 行，请以实际情况为准）
     # Deployment
