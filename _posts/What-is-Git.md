@@ -17,11 +17,7 @@ categories:
 
 ## Git 的诞生
 
-　　其实，Git 是[林纳斯·托瓦兹](https://www.baidu.com/s?wd=林纳斯·托瓦兹&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)为了帮助管理 [Linux ](https://baike.baidu.com/item/Linux /27050)内核开发而开发的。在2002年以前，世界各地的志愿者还是以一种传统的方式将源代码文件发给林纳斯·托瓦兹，然后由他本人通过手工方式合并代码。当时虽然有 CSV、SVN 这些免费的版本控制系统，但是速度慢、需要联网，也有一些商用的版本控制系统，虽然比 CSV、SVN 好用，但是不开源，和 Linux 的开源精神不符。2002 年，Linux 系统已经发展了十年，代码库之大让林纳斯·托瓦兹很难继续通过手工方式管理，最终林纳斯·托瓦兹选择了一个商业的版本控制系统 BitKeeper，BitKeeper 的东家 BitMover 公司出于人道主义精神，授权 Linux 社区免费使用这个版本控制系统，这看起来是一个很好的局面。Linux 社区牛人聚集，2005年，开发 Samba 的 Andrew 试图破解 BitKeeper 的协议的行为被 BitMover 公司发现，Linux 社区的 BitKeeper 免费使用权被收回，于是，[林纳斯·托瓦兹](https://www.baidu.com/s?wd=林纳斯·托瓦兹&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)花了两周时间自己用 C 写了一个分布式版本控制系统，Git诞生！之后，Git 迅速成为最流行的分布式版本控制系统，随即，2008 年，GitHub 网站上线，它为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括jQuery、PHP、Ruby 等等。
-
-## Git 真的很重要
-
-　　代码改变世界。每一门编程语言的第一个程序都是在屏幕上打印出“Hello,World!”，这就好像该门编程语言是有生命力的，满怀自信地说着你好，世界。世界的更多可能性，正在一点点的被发掘，而这一切的一切的幕后，是程序员和版本控制系统，是Git！。
+　　其实，Git 是[林纳斯·托瓦兹](https://www.baidu.com/s?wd=林纳斯·托瓦兹&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)为了帮助管理[Linux](https://baike.baidu.com/item/Linux/27050)内核开发而开发的。在2002年以前，世界各地的志愿者还是以一种传统的方式将源代码文件发给林纳斯·托瓦兹，然后由他本人通过手工方式合并代码。当时虽然有 CSV、SVN 这些免费的版本控制系统，但是速度慢、需要联网，也有一些商用的版本控制系统，虽然比 CSV、SVN 好用，但是不开源，和 Linux 的开源精神不符。2002 年，Linux 系统已经发展了十年，代码库之大让林纳斯·托瓦兹很难继续通过手工方式管理，最终林纳斯·托瓦兹选择了一个商业的版本控制系统 BitKeeper，BitKeeper 的东家 BitMover 公司出于人道主义精神，授权 Linux 社区免费使用这个版本控制系统，这看起来是一个很好的局面。Linux 社区牛人聚集，2005年，开发 Samba 的 Andrew 试图破解 BitKeeper 的协议的行为被 BitMover 公司发现，Linux 社区的 BitKeeper 免费使用权被收回，于是，[林纳斯·托瓦兹](https://www.baidu.com/s?wd=林纳斯·托瓦兹&tn=SE_PcZhidaonwhc_ngpagmjz&rsv_dl=gh_pc_zhidao)花了两周时间自己用 C 写了一个分布式版本控制系统，Git诞生！之后，Git 迅速成为最流行的分布式版本控制系统，随即，2008 年，GitHub 网站上线，它为开源项目免费提供 Git 存储，无数开源项目开始迁移至 GitHub，包括jQuery、PHP、Ruby 等等。
 
 ## 安装和配置 Git
 
