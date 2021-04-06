@@ -163,7 +163,7 @@
       siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/jiushiboy.top.jpg
     - name: 江卮可乐
       link: https://blog.jannns.com/
-      avatar: https://photo.janshirley.com/images/2021/02/28/bd6933b421e1fc15509e1f3a296989b0.md.jpg
+      avatar: https://photo.jannns.com/images/2021/03/28/7fe68a00a089a06b55ada27651bc0cb8.jpg
       descr: 江的三言两语
       siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.jannns.com.jpg
     - name: 丨浅笑安然丨
@@ -176,6 +176,21 @@
       avatar: https://cdn.jsdelivr.net/gh/youthlql/lql_img/blog/avatar.jpg
       descr: 主要是 Java 技术栈的博客，比较偏原理，源码类型的博主。
       siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/imlql.cn.jpg
+    - name: CC’s Zone
+      link: https://ccs.zone/
+      avatar: https://cdn.jsdelivr.net/gh/caicheng918/CDN/photo/avater.jpg
+      descr: 从未来再见
+      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/ccs.zone.jpg
+    - name: MasterStudio
+      link: https://matemaster.cn/
+      avatar: https://cdn.jsdelivr.net/gh/matemaster9/image-one/images/20210317194803.jpg
+      descr: 专心做一件事。
+      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/matemaster.cn.jpg
+    - name: Mirageの胖团子
+      link: https://zwrx.xyz/
+      avatar: https://wei-1300806220.cos.ap-shanghai.myqcloud.com/zwrx/head.jpg 
+      descr: 智慧需要沉淀，积累才能饱满。
+      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/zwrx.xyz.jpg
 
 - class_name: 网站
   class_desc: 值得推荐的网站

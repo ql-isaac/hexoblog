@@ -535,7 +535,7 @@ links:
   if (Hls.isSupported()) {
     var video2 = document.getElementById('video2');
     var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-video-1/添加友情链接/添加友情链接.m3u8');
+    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-videos-1/添加友情链接/添加友情链接.m3u8');
     hls.attachMedia(video2);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
