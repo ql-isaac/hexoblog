@@ -188,7 +188,7 @@ categories:
 
 6. 在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
 
-![Git 的工作流程](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/What-is-Git/Git%20的工作流程.png)
+![Git 的工作流程](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/What-is-Git/Git%20的工作流程.jpg)
 
 ## Git 工作区、暂存区和版本库
 
