@@ -17,8 +17,8 @@ menu:
   友链: /link/ || fas fa-link
   #关于: /about/ || fas fa-heart
 
-# 友链样式，butterfly为默认样式，volantis为站点卡片样式。
-flink_style: volantis # butterfly | volantis
+# 友链样式，butterfly为默认样式，volantis为站点卡片样式.flexcard为弹性卡片样式
+flink_style: volantis # butterfly | volantis | flexcard
 
 # Hide the child menu items in mobile sidebar
 hide_sidebar_menu_child: false
@@ -762,11 +762,11 @@ darkmode:
 
 # medium-zoom
 # https://github.com/francoischalifour/medium-zoom
-medium_zoom: false
+medium_zoom: true
 
 # fancybox
 # http://fancyapps.com/fancybox/3/
-fancybox: true
+fancybox: false
 
 # Tag Plugins settings (標籤外掛)
 # --------------------------------------

@@ -1,196 +1,158 @@
 - class_name: 友情链接
-  class_desc: 那些人，那些事
+  class_desc: 那些人，那些事。
   link_list:
     - name: JerryC
       link: https://jerryc.me/
       avatar: https://jerryc.me/image/avatar.png
       descr: 今日事，今日畢。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/jerryc.me.jpg
     - name: Butterfly
       link: https://butterfly.js.org/
       avatar: https://jerryc.me/image/avatar.png
       descr: 今日事，今日畢。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/butterfly.js.org.jpg
     - name: チェンシャン
       link: https://chen-shang.top/
       avatar: https://blog.chen-shang.top/img/chenshang.jpg
       descr: Let's go to 2077
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/chen-shang.top.jpg
     - name: Heo
       link: https://blog.zhheo.com/
       avatar: https://blog.zhheo.com/img/avatar.png
       descr: 爱折腾的设计师
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.zhheo.com.jpg
     - name: Alex
       link: https://alexcld.com/
       avatar: https://alexcld.com/img/author.jpg
       descr: children don't lie
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/alexcld.com.jpg
     - name: xwcker
       link: https://www.hack-gov.com.cn/
       avatar: https://www.hack-gov.com.cn/img/friend_404.gif
       descr: 海客GO - 爱牟 听着海客的瀛谈
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.hack-gov.com.cn.jpg
     - name: 小冰博客
       link: https://zfe.one/
       avatar: https://zfe.space/images/headimage.png
       descr: 做个有梦想的人！
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/zfe.one.jpg
     - name: 昕某人の秘密基地
       link: https://www.maxin-blog.com
       avatar: https://blog-image-1300408325.file.myqcloud.com/friend.jpg
       descr: 昕某人的秘密基地
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.maxin-blog.com.jpg
     - name: Akilarの糖果屋
       link: https://akilar.top/
       avatar: https://akilar.top/img/siteicon/favicon.png
       descr: 期待您的光临！
-      siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
     - name: 泰戈尔
       link: https://www.iftiger.com/
       avatar: https://ittiger.top/%E5%A4%B4%E5%83%8F.jpg
       descr: 学海无涯，永无止境。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.iftiger.com.jpg
     - name: 沉默的小嘉
       link: https://blog.imzjw.cn/
       avatar: https://cdn.jsdelivr.net/gh/zjwo/CDN@master/img/blog/avatar.jpg
       descr: 好记性不如烂笔头。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.imzjw.cn.jpg
     - name: 小康博客
       link: https://www.antmoe.com/
       avatar: https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/avatar.jpg
       descr: 一个收藏回忆与分享技术的地方！
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.antmoe.com.jpg
     - name: Lete乐特
       link: https://www.lete114.top/
       avatar: https://www.lete114.top/img/avatar.png
       descr: 人生只有一次，大胆的生活！！
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.lete114.top.jpg
     - name: 时过境迁Wayne博客
       link: https://wr0926.ml
       avatar: https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/avatar.jpg
       descr: 以梦为马，不负韶华。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/wr0926.ml.jpg
     - name: Ln’s Blog
       link: https://weilining.cf/
       avatar: https://cdn.jsdelivr.net/gh/weilining/img@main/img/20201120235415.png
       descr: 时不我待
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/weilining.cf.jpg
     - name: 风叶的小窝
       link: https://blog.windandleaf.xyz/
       avatar: https://blog.windandleaf.xyz/myself/pic_page/head.jpg
       descr: 念念不忘 必有回响
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.windandleaf.xyz.jpg
     - name: 青葱雅亭
       link: https://imciraos.com/
       avatar: https://cdn.jsdelivr.net/gh/ciraos/greatimgbed@master/avatar.jpg
       descr: 一切皆付笑谈中。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/imciraos.com.jpg
     - name: By_xb
       link: https://wtnl.xyz/
       avatar: https://cdn.jsdelivr.net/gh/byxiaobian/CDN//images/actor.jpg
       descr: 努力做一个有用的人 ! 
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/wtnl.xyz.jpg
     - name: 一川·MOLIPRE·BLOG
       link: https://blog.molipre.com/
       avatar: https://blog.molipre.com/img/touxiang.jpg
       descr: 读万卷书，行万里路。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.molipre.com.jpg
     - name: 呆逼の博客
       link: https://blog.keepdai.cn/
       avatar: https://cdn.jsdelivr.net/gh/Daibi-mua/jsdelivr@1.3/logo.png
       descr: 一个初中生的博客
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.keepdai.cn.jpg
     - name: killuaの博客
       link: https://aabbj.com/
       avatar: https://cdn.jsdelivr.net/gh/flurrychan/CDN/tx.jpg
       descr: 一个小破站
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/aabbj.com.jpg
     - name: 卓越科技的 Blog
       link: https://zykj.js.org/
       avatar: https://cdn.jsdelivr.net/gh/zykjofficial/zykjofficial.github.io@master/img/avatar.png
       descr: Remarkable life,for science and technology
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/zykj.js.org.jpg
     - name: 三生石
       link: https://jiazhibo.top/
       avatar: https://jiazhibo.top/img/tx.png
       descr: 梦想还是有的，就算做咸鱼，也要做最咸的。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/jiazhibo.top.jpg
     - name: OG-Liu's Blog
       link: https://ogliu.com/
       avatar: https://cdn.jsdelivr.net/gh/og-liu/image-host/20201228114753.jpg
       descr: 立志如山，行道如水。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/ogliu.com.jpg
     - name: GamerNoTitle
       link: https://bili33.top/
       avatar: https://cdn.jsdelivr.net/gh/GamerNoTitle/Picture-repo@1.0/AboutMe/logo-mini.png
       descr: 一个在懵懂无知中成长的高中生程序员^V^
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/bili33.top.jpg
     - name: Ethan.Tzy
       link: https://ethant.top/
       avatar: https://cdn.jsdelivr.net/gh/tzy13755126023/BLOG_SOURCE/theme_f/avater.jpg
       descr: 学习与交流的乐园，希望能和你成为好朋友。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/ethant.top.jpg
     - name: SL's Blog
       link: https://blog.slqwq.cn/
       avatar: https://cdn.slblog.ga/pic/logo.png
       descr: 梦中做梦，做了个白日梦。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.slqwq.cn.jpg
     - name: 青春永不落幕
       link: https://qcyblm.gitee.io/
       avatar: https://qcyblm.gitee.io/favicon.ico
       descr: 一位网页设计和收集Windows平台软件的爱好者
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/qcyblm.gitee.io.jpg
     - name: CC 的部落格
       link: https://blog.ccknbc.cc/
       avatar: https://cdn.jsdelivr.net/gh/ccknbc-backup/cdn/logo/ccknbc.png
       descr: CC 康纳百川
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.ccknbc.cc.jpg
     - name: 来日方长
       link: https://www.wo-ow.cn/
       avatar: https://www.kococ.cn/favicon.ico
       descr: 将我收藏，来日方长。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/www.wo-ow.cn.jpg
     - name: 天昕
       link: https://sutianxin.top/
       avatar: https://gitee.com/sutianxin/my-hexo-blog-photo/raw/master/20210213111233.png
       descr: 往者不谏 来者可追
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/sutianxin.top.jpg
     - name: 九世的博客
       link: https://jiushiboy.top/
       avatar: https://cdn.jsdelivr.net/gh/jiushiboy/image1/img/tx.jpg
       descr: I seem to have forgotten someone
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/jiushiboy.top.jpg
     - name: 江卮可乐
       link: https://blog.jannns.com/
       avatar: https://photo.jannns.com/images/2021/03/28/7fe68a00a089a06b55ada27651bc0cb8.jpg
       descr: 江的三言两语
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blog.jannns.com.jpg
     - name: 丨浅笑安然丨
       link: https://sianx.com/
       avatar: https://cdn.jsdelivr.net/gh/L-20021213/picture/Blog/logo.png
       descr: 总之岁月漫长, 然而值得等待。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/sianx.com.jpg
     - name: Youth的时光录
       link: https://imlql.cn/
       avatar: https://cdn.jsdelivr.net/gh/youthlql/lql_img/blog/avatar.jpg
       descr: 主要是 Java 技术栈的博客，比较偏原理，源码类型的博主。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/imlql.cn.jpg
     - name: CC’s Zone
       link: https://ccs.zone/
       avatar: https://cdn.jsdelivr.net/gh/caicheng918/CDN/photo/avater.jpg
       descr: 从未来再见
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/ccs.zone.jpg
     - name: MasterStudio
       link: https://matemaster.cn/
       avatar: https://cdn.jsdelivr.net/gh/matemaster9/image-one/images/20210317194803.jpg
       descr: 专心做一件事。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/matemaster.cn.jpg
     - name: Mirageの胖团子
       link: https://zwrx.xyz/
       avatar: https://wei-1300806220.cos.ap-shanghai.myqcloud.com/zwrx/head.jpg 
       descr: 智慧需要沉淀，积累才能饱满。
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/zwrx.xyz.jpg
 
 - class_name: 网站
   class_desc: 值得推荐的网站
@@ -199,10 +161,8 @@
       link: https://blogs.ql-isaac.cn/
       avatar: https://image.ql-isaac.cn/站长头像.jpg
       descr: 我的动态博客
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/blogs.ql-isaac.cn.jpg
     - name: Hexo
       link: https://hexo.io/zh-cn/
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简洁且高效的博客框架
-      siteshot: https://cdn.jsdelivr.net/gh/ql-isaac/ScreenShot@gh-pages/hexo.io.jpg
     
