@@ -30,7 +30,7 @@
             .flink-desc!=i.class_desc
           .site-card-group
             each item in i.link_list
-              a.site-card(target='_blank' rel='noopener' href=url_for(item.link))
+              a.site-card.wow.animate__flipInY(target='_blank' rel='noopener' href=url_for(item.link))
                 .img
                   - var siteshot = item.siteshot ? url_for(item.siteshot) : 'https://image.thum.io/get/width/400/crop/800/allowJPG/wait/20/noanimate/' + item.link
                   if theme.lazyload.enable
