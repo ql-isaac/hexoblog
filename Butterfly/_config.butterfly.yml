@@ -459,15 +459,14 @@ google_adsense:
 #   aside:
 #   post:
 
+# Verification (站長驗證)
+# --------------------------------------
+
 site_verification:
   # - name: google_site_verification
   #   content: xxxxxx
   # - name: baidu_site_verification
   #   content: xxxxxxx
-
-# Yandex Webmaster tools verification setting
-# see https://webmaster.yandex.com/
-yandex_site_verification:
 
 # Beautify/Effect (美化/效果)
 # --------------------------------------
@@ -696,6 +695,7 @@ newest_comments:
   enable: true
   sort_order: # Don't modify the setting unless you know how it works
   limit: 6
+  storage: 10 # unit: mins, save data to localStorage
   avatar: true
   # You can only choose one, or neither
   valine: false
@@ -806,9 +806,6 @@ snackbar:
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
-# Baidu Push (百度推送)
-baidu_push: false
-
 # https://instant.page/
 # prefetch (預加載)
 instantpage: true
@@ -832,11 +829,11 @@ lazyload:
 # ---------------
 # pwa:
 #   enable: false
-#   manifest: /image/pwa/manifest.json
-#   apple_touch_icon: /image/pwa/apple-touch-icon.png
-#   favicon_32_32: /image/pwa/32.png
-#   favicon_16_16: /image/pwa/16.png
-#   mask_icon: /image/pwa/safari-pinned-tab.svg
+#   manifest: /pwa/manifest.json
+#   apple_touch_icon: /pwa/apple-touch-icon.png
+#   favicon_32_32: /pwa/32.png
+#   favicon_16_16: /pwa/16.png
+#   mask_icon: /pwa/safari-pinned-tab.svg
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
