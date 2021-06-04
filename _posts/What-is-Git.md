@@ -120,17 +120,17 @@ categories:
 1. 相比在 Windows 上，在 Linux 上安装和配置 Git 的步骤就比较少了。在终端输入以下命令回车执行，确保系统和 apt 包列表完全更新；
 
    ```bash
-   $ sudo apt-get update -y
+   sudo apt-get update -y
    ```
 ![更新](https://image.ql-isaac.cn/%E6%9B%B4%E6%96%B0.png)
-2. 在终端输入以下命令回车，安装 Git，可输入以下命令查看 Git 版本；
+2. 在终端输入以下命令回车，安装 Git，可再输入以下命令查看 Git 版本；
 
    ```bash
-   $ sudo apt install git
+   sudo apt install git
    ```
 
    ```bash
-   $ git --version
+   git --version
    ```
 
    ![安装Git](https://image.ql-isaac.cn/%E5%AE%89%E8%A3%85Git.gif)
@@ -138,39 +138,36 @@ categories:
 3. 全局用户信息配置：分别输入以下两个命令回车执行，无提示表示命令执行成功，可以用`git config --list`来查看配置好的信息；
 
    ```bash
-   $ git config --global user.name "<自己的 Github 用户名>"
+   git config --global user.name "<自己的 Github 用户名>"
    ```
 
    ```bash
-   $ git config --global user.email "<自己的 Github 邮箱>"
+   git config --global user.email "<自己的 Github 邮箱>"
    ```
 
 4. 生成 SSH 秘钥：输入以下命令回车执行，然后连敲三次回车键；
 
    ```bash
-   $ ssh-keygen -t rsa
+   ssh-keygen -t rsa
    ```
 
 5. 输入以下命令回车，输入用户密码安装 Vim 文本编辑器；
 
    ```bash
-   $ sudo apt-get install vim
+   sudo apt-get install vim
    ```
 
 6. 执行以下命令，用 Vim 打开公钥文件，复制其中的内容（不要复制多了，也不要复制少了）；
 
    ```bash
-   $ vim /home/<自己的用户名>/.ssh/id_rsa.pub
+   vim /home/<自己的用户名>/.ssh/id_rsa.pub
    ```
 
 7. 登录自己的 Github 账号，点击右上角的头像，点击 Setting，点击左侧的 SSH and GPG keys，点击右侧的 New SSH key，填写Tile，粘贴刚复制的内容为 Key，最后点击 Add SSH key；
 
 8. 测试一下，输入以下命令回车执行，有如下提示，表示本机和自己的 GitHub 绑定成功。
    ```bash
-   $ ssh -T git@github.com
-   ```
-
-   ```
+   ssh -T git@github.com
    Hi <自己的GitHub用户名>! You've successfully authenticated, but GitHub does not provide shell access.
    ```
 
@@ -198,8 +195,17 @@ categories:
 
 　　下面这个图展示了工作区、版本库中的暂存区和版本库之间的关系：
 
+![](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/What-is-Git/Git%20工作区、暂存区和版本库.jpg)
 
+1. 当对当前工作区编辑（M）、添加（A）或删除（D）的文件执行 git add 命令时，暂存区的目录树被更新；
 
-1. 当对工作区编辑（M）、添加（A）或删除（D）的文件执行 git add 命令时，暂存区的目录树被同步更新；
 2. 当执行提交操作（git commit）时，暂存区转化为版本库的下一次提交；
-3. 当执行  git reset HEAD 命令时，暂存区的目录树会被重写，被 master 分支指向的目录树所替换，但是工作区不受影响。
+
+3. 当执行`git reset HEAD`命令时，暂存区的目录树会被重写，被版本库最新版本（HEAD）替换，但是工作区不受影响；
+
+4. 当执行`git checkout .`或者`git checkout -- <file>`命令时，会用暂存区全部或指定的文件替换工作区的文件。这个操作很危险，会清除工作区中未添加到暂存区的改动；
+
+5. 当执行`git rm --cached <file>`命令时，会直接从暂存区删除文件，工作区则不做出改变；
+
+6. 当执行`git checkout HEAD .`或者`git checkout HEAD <file>`命令时，会用版本库最新版本（HEAD）全部或者部分文件替换暂存区以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未添加到暂存区的改动，也会清除暂存区中未提交的改动。
+
