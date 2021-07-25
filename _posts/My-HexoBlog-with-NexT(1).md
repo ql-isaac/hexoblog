@@ -47,7 +47,7 @@ categories:
 
 9. 在终端输入`hexo init`，等待，可在<存储 HexoBlog 的文件夹>中看到生成了如下图所示的文件。
 
-![初始文件](https://image.ql-isaac.cn/初始文件.png)
+![初始文件](https://image.ql-isaac.cn/My-HexoBlog-with-NexT%281%29/%E5%88%9D%E5%A7%8B%E6%96%87%E4%BB%B6.png)
 
 ### 本地部署我的 HexoBlog
 

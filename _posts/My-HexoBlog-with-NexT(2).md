@@ -53,7 +53,7 @@ categories:
 
 　　效果展示：
 
-![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/配置博客站点基本信息.png)
+![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/配置博客站点基本信息.png)
 
 ### 下载和设置 NexT 主题
 
@@ -104,7 +104,7 @@ footer:
 
 　　效果展示：
 
-![image-20210317220238757](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/页脚建站年份.png)
+![页脚建站年份](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/页脚建站年份.png)
 
 ### 在页脚添加备案信息
 
@@ -140,7 +140,7 @@ footer:
 
 　　效果展示：
 
-![页脚备案信息](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/页脚备案信息.png)
+![页脚备案信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/页脚备案信息.png)
 
 ### 选择主题风格
 
@@ -157,13 +157,13 @@ scheme: Muse
 
 　　各种主题风格展示：
 
-![Muse](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Muse.png)
+![Muse](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/Muse.png)
 
-![Mist](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Mist.png)
+![Mist](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/Mist.png)
 
-![Pisces](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Pisces.png)
+![Pisces](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/Pisces.png)
 
-![Gemini](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/Gemini.png)
+![Gemini](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/Gemini.png)
 
 ### 添加标签和分类菜单项
 
@@ -535,7 +535,7 @@ links:
   if (Hls.isSupported()) {
     var video2 = document.getElementById('video2');
     var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-videos-1/添加友情链接/添加友情链接.m3u8');
+    hls.loadSource('https://cdn.jsdelivr.net/gh/isaac-ql/post-videos-1/添加友情链接/添加友情链接.m3u8');
     hls.attachMedia(video2);
     hls.on(Hls.Events.MANIFEST_PARSED,function() {
       video.play();
@@ -561,7 +561,7 @@ links:
 
 　　效果展示：
 
-![tag](https://cdn.jsdelivr.net/gh/ql-isaac/post-images-1/My-HexoBlog-with-NexT(2)/tag.png)
+![tag](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/tag.png)
 
 ### 设置文本对齐方式为左对齐
 
@@ -821,7 +821,7 @@ font:
 
 　　Valine 是基于 LeanCloud 的，首先需要[注册 LeanCloud 账号](https://leancloud.cn/dashboard/login.html)，注意需要验证邮箱，注册成功后进入控制台，需要先实名认证，认证成功后，点击创建应用，新应用名称就填 Valine，这个随便，选择开发版，点击创建，点击存储图标，点击创建 Class，Class 名称填 Comment，添加，再点击创建 Class，Class 名称填 Counter，添加，创建 Class 成功后如下图。
 
-![](https://image.ql-isaac.cn/创建Class.png)
+![](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My-HexoBlog-with-NexT(2)/创建Class.png)
 
 　　点击左边的设置，点击安全中心，服务开关里仅打开数据存储服务，Web 安全域名中填写自己的博客地址，保存，点击左侧应用 keys，获取到<自己的 App ID>和<自己的 App key>。
 

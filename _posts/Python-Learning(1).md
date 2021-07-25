@@ -29,17 +29,17 @@ categories:
 
 　　前往[ Python 官网](https://www.python.org/)下载最新版 Python，需要说明的是，Python2.x 和 Python3.x 之间存在较大差异，在开发中一般都使用 Python3.x，本次使用的版本为 3.8.1。
 
-![最新版Python下载](https://image.ql-isaac.cn/最新版Python下载.png)
+![最新版Python下载](https://image.ql-isaac.cn/Python-Learning(1)/最新版Python下载.png)
 
 　　下载完成后运行安装程序，勾选 Add Python 3.8 to PATH，点击 Customize installation，点击 Next，点击 Install，等待安装完成。按下 Windows+R 组合键，输入 CMD 进入命令行窗口，输入 python，发现可进入 Python 交互式环境，如下图。
 
-![Python交互式环境](https://image.ql-isaac.cn/Python交互式环境.png)
+![Python 交互式环境](https://image.ql-isaac.cn/Python-Learning(1)/Python交互式环境.png)
 
 　　文本编辑器到底哪家强？我推荐 Visual Studio Code。[前往官网](https://code.visualstudio.com/)，点击Download for Windows，下载完成后运行安装程序，下一步即可，但建议到下图这一步时勾选上这三个选项，等待安装完成。安装完成后进入 Visual Studio Code，点击左边第五个图标，搜索 chinese，如下图，点击 Install 安装简体中文包，安装完成后点击 Restart Now，仍然点击左边第五个图标，搜索 python，点击第一个，安装。
 
-![勾选](https://image.ql-isaac.cn/Visual-Studio-Code-勾选.png)
+![勾选](https://image.ql-isaac.cn/Python-Learning(1)/勾选.png)
 
-![安装简体中文包](https://image.ql-isaac.cn/安装简体中文包.png)
+![安装简体中文包](https://image.ql-isaac.cn/Python-Learning(1)/勾选.png安装简体中文包.png)
 
 ## Python 学习起步
 
@@ -51,11 +51,11 @@ categories:
 print("Hello,world!")
 ```
 
-![打开文件夹](https://image.ql-isaac.cn/打开文件夹.png)
+![打开文件夹](https://image.ql-isaac.cn/Python-Learning(1)/打开文件夹.png)
 
 　　点击右上角运行图标，可看到学习任何一个编程语言第一个程序的运行结果，如下图。
 
-![第一个程序](https://image.ql-isaac.cn/第一个程序.png)
+![第一个程序](https://image.ql-isaac.cn/Python-Learning(1)/第一个程序.png)
 
 ## 注释
 
@@ -891,9 +891,9 @@ while num_b < 1000:
 
 ### for 循环
 
-| for 循环                          | for...else 循环                                              |
-| --------------------------------- | ------------------------------------------------------------ |
-| for 变量 in 序列<br/>    循环语句 | for 变量 in 序列<br/>    循环语句<br/>else:<br/>    循环语句执行完毕后的语句 |
+| for 循环                                | for...else 循环                                              |
+| --------------------------------------- | ------------------------------------------------------------ |
+| for <变量> in <序列><br/>    <循环语句> | for <变量> in <序列><br/>    <循环语句><br/>else:<br/>    <循环语句执行完毕后的语句> |
 
 ## 序列
 
@@ -1062,7 +1062,20 @@ print(infos)
 
 #### 数据分片
 
-　　列表的数据分片，即截取列表的一部分，即子列表
+　　列表的数据分片，即截取列表的一部分：
+
+- 指定截取范围：`<列表>[<开始索引>:<结束索引>]`；
+
+- 从指定索引一直截取到结尾：`<列表>[<开始索引>:]`；
+
+- 从开头一直截取到指定索引：`<列表>[:<结束索引>]`；
+
+- 设置截取步长：`<列表>[<开始索引>:<结束索引>:<步长>]`。
+
+
+
+
+
 
 ### 元组
 
@@ -1077,3 +1090,13 @@ print(infos)
 　　lambda 表达式即 lambda 函数，
 
 ### 主函数
+
+### callable()
+
+callabl() 
+
+```
+print("input()是否可以调用：%s" % callable(input))
+def get_info
+```
+

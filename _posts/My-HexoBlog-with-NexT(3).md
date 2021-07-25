@@ -31,43 +31,27 @@ categories:
 
 ### 标题
 
-　　使用`#`可表示 1-6 级标题。一级标题对应一个 #，二级标题对应两个 # ，以此类推，如下视频（注意 # 后面有一个空格）。
+　　使用`#`可表示 1-6 级标题。一级标题对应一个 #，二级标题对应两个 # ，以此类推，如下图（注意 # 后面有一个空格）。
 
-```markdown
-# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-```
-
-　　演示视频：
-
-<video id="video1" preload controls loop style="height: 100%;width: 100%;object-fit: cover;"></video>
-<script>
-  if (Hls.isSupported()) {
-    var video1 = document.getElementById('video1');
-    var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/ql-isaac/post-video-1/标题/标题.m3u8');
-    hls.attachMedia(video1);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
-  }
-</script>
+![标题](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/标题.gif)
 
 ### 列表
 
-　　经常用的是有序列表和无序列表。使用`<序号>. `（`.`后面有一个空格）可表示有序列表，回车自动生成下一项，如下图。
+　　经常用的是有序列表和无序列表。使用`<序号>. `（`.`后面有一个空格）可表示有序列表，若`<序号>. `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![有序列表](https://image.ql-isaac.cn/有序列表.gif)
+![有序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/有序列表.gif)
 
-　　使用`- `（`-`后面有空格）可表示无序列表，回车自动生成下一项，如下图。
+　　使用`- `（`-`后面有空格）可表示无序列表，若`- `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![无序列表](https://image.ql-isaac.cn/无序列表.gif)
+![无序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/无序列表.gif)
 
-　　还有一个任务列表，使用`- [ ] `（`[ ]`后面有空格）可表示任务列表，回车自动生成下一项，如下图。
+　　还有一个任务列表，使用`- [ ] `（`[ ]`后面有空格）可表示任务列表，若`- [ ] `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![任务列表](https://image.ql-isaac.cn/任务列表.gif)
+![任务列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/任务列表.gif)
+
+## 分割线
+
+
 
 ## 如何在文章中插入图片、视频和音乐？
 
