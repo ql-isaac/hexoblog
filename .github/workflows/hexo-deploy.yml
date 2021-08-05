@@ -1,0 +1,88 @@
+name: hexo-deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Butterfly-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['lts/erbium']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+        env:
+          TZ: Asia/Shanghai
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@main
+        with:
+          node-version:  ${{ matrix.node }}
+      - name: Handle npm cache
+        uses: actions/cache@main
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/Butterfly/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Deploy
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          cp -r _posts/ Butterfly/source/_posts/
+          cd Butterfly/
+          npm install
+          npm run build
+          cd public/
+          git config --global init.defaultBranch master
+          git init
+          git config user.name "${{secrets.GIT_NAME}}"
+          git config user.email "${{secrets.GIT_EMAIL}}"
+          git add .
+          git commit -m "Site updated" -q
+          git push -f -q "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF_BUTTERFLY}}" master
+          git push -f -q "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_BUTTERFLY}}" master
+  NexT-build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['lts/erbium']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+        env:
+          TZ: Asia/Shanghai
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@main
+        with:
+          node-version:  ${{ matrix.node }}
+      - name: Handle npm cache
+        uses: actions/cache@main
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/NexT/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Deploy
+        env:
+          TZ: Asia/Shanghai
+        run: |
+          cp -r _posts/ NexT/source/_posts/
+          cd NexT/
+          npm install
+          npm run build
+          cd public/
+          git config --global init.defaultBranch master
+          git init
+          git config user.name "${{secrets.GIT_NAME}}"
+          git config user.email "${{secrets.GIT_EMAIL}}"
+          git add .
+          git commit -m "Site updated" -q
+          git push -f -q "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF_NEXT}}" master:master
+          git push -f -q "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_NEXT}}" master:master
