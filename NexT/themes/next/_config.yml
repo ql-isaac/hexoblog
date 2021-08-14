@@ -79,7 +79,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: http://www.beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
     enable: true
-    icp: 京 ICP 备 20031573 号 -1
+    icp: 京ICP备20031573号-1
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
@@ -304,7 +304,7 @@ related_posts:
 post_edit:
   enable: true
   #url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name # Link for view source
-  url: https://github.com/ql-isaac/HexoBlog/edit/main/ # Link for fork & edit
+  url: https://github.dev/ql-isaac/HexoBlog# # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false

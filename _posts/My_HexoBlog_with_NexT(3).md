@@ -33,21 +33,21 @@ categories:
 
 　　使用`#`可表示 1-6 级标题。一级标题对应一个 #，二级标题对应两个 # ，以此类推，如下图（注意 # 后面有一个空格）。
 
-![标题](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/标题.gif)
+![标题](https://cdn.jsdelivr.net/npm/post-gifs-1/My_HexoBlog_with_NexT(3)/标题.gif)
 
 ### 列表
 
 　　经常用的是有序列表和无序列表。使用`<序号>. `（`.`后面有一个空格）可表示有序列表，若`<序号>. `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![有序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/有序列表.gif)
+![有序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My_HexoBlog_with_NexT(3)/有序列表.gif)
 
 　　使用`- `（`-`后面有空格）可表示无序列表，若`- `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![无序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/无序列表.gif)
+![无序列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My_HexoBlog_with_NexT(3)/无序列表.gif)
 
 　　还有一个任务列表，使用`- [ ] `（`[ ]`后面有空格）可表示任务列表，若`- [ ] `之后接了实际内容，则回车自动生成下一项，如没有实际内容，回车回到正文，如下图。
 
-![任务列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My-HexoBlog-with-NexT(3)/任务列表.gif)
+![任务列表](https://cdn.jsdelivr.net/npm/post-gifs-1/My_HexoBlog_with_NexT(3)/任务列表.gif)
 
 ## 分割线
 
@@ -61,7 +61,7 @@ categories:
 
 ### 在文章内插入视频
 
-　　在[存储 HexoBlog 的文件夹]下进入终端，输入如下命令安装  hexo-tag-dplayer。
+　　在[存储 HexoBlog 的文件夹]下进入终端，输入如下命令安装 hexo-tag-dplayer。
 
 ```bash
 cnpm install --save hexo-tag-dplayer

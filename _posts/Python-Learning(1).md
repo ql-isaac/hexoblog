@@ -198,7 +198,7 @@ print(type(num_a/num_b))
 　　范例：使用复数（一）（新建文件 complex.py)
 
 ```python
-num = complex(10,2) # 实部为 10，虚部为 2
+num = complex(10,2) # 实部为10，虚部为2
 print(num)
 ```
 
@@ -211,7 +211,7 @@ print(num)
 　　范例：使用复数（二）（修改文件 complex.py）
 
 ```python
-num = complex(10,2) # 实部为 10，虚部为 2
+num = complex(10,2) # 实部为10，虚部为2
 print(num)
 print(num.real) # 获取实部
 print(num.imag) # 获取虚部
@@ -234,7 +234,7 @@ print(num.conjugate()) # 获取共轭复数
 　　范例：使用布尔（一）（新建文件 boolean.py)
 
 ```python
-flag = True # Python 中的 True 是首字母大写的
+flag = True # Python中的True是首字母大写的
 if flag: # 分支语句
         print("Hello,world!")
 ```
@@ -250,7 +250,7 @@ Hello,world!
 　　范例：使用布尔（二）（修改文件 boolean.py)
 
 ```python
-flag = 1 # 非 0
+flag = 1 # 非0
 if flag: # 分支语句
         print("Hello,world!")
 ```
@@ -413,7 +413,7 @@ ValueError: invalid literal for int() with base 10: '2BC9'
 ```python
 str = "199"
 num_f = "199.6"
-num_bol = True # True 转为整形数据 1
+num_bol = True # True转为整形数据1
 result = int(str) + int(num_f) + int(num_bol)
 print(result)
 print(type(result))
@@ -829,11 +829,11 @@ year = int(input("请输入一个年份："))
 if (year % 4) == 0:
     if(year % 100) == 0:
         if(year % 400) == 0:
-            print("%d 年是闰年"%(year)) # 整百年里能被 400 整除的是闰年
+            print("%d 年是闰年"%(year)) # 整百年里能被400整除的是闰年
         else:
             print("%d 年不是闰年"%(year))
     else:
-        print("%d 年是闰年"%(year)) # 非整百年里能被 4 整除的为闰年
+        print("%d 年是闰年"%(year)) # 非整百年里能被4整除的为闰年
 else:
     print("%d 年不是闰年"%(year))
 ```

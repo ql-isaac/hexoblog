@@ -1,5 +1,5 @@
 ---
-title: 	C 从入门到精通（一）
+title: C 从入门到精通（一）
 date: 2020-02-13 19:56:24
 cover: https://image.ql-isaac.cn/C从入门到精通（一）.jpg
 tags:
@@ -23,7 +23,7 @@ categories:
 
 ### 安装 VMware pro 15
 
-　　下载[学习版](https://www.52pojie.cn/thread-1026907-1-1.html)，安装步骤不多说了，只是有一点建议，也是我装软件的原则：能不装 C 盘就别装 C盘。
+　　下载[学习版](https://www.52pojie.cn/thread-1026907-1-1.html)，安装步骤不多说了，只是有一点建议，也是我装软件的原则：能不装 C 盘就别装 C 盘。
 
 ### 下载 Ubuntu 18.04LTS 系统映像
 
@@ -215,7 +215,7 @@ categories:
 
    ![更换图标](https://image.ql-isaac.cn/C-Learning(1)/更换图标.gif)
 
-18. 有一个地方忘记了，打开优化，选择shell为 Mojave-light；
+18. 有一个地方忘记了，打开优化，选择 shell 为 Mojave-light；
 
    ![更换 shell](https://image.ql-isaac.cn/C-Learning(1)/更换shell.gif)
 
@@ -327,7 +327,7 @@ ll
 #include <stdio.h>
 
 int main(){
-    printf("12+34=%d\n",12+34); //%d 为占位符，表示数据打印出来的格式应该是十进制整数的格式
+    printf("12+34=%d\n",12+34); //%d为占位符，表示数据打印出来的格式应该是十进制整数的格式
     return 0;
 }
 ```
@@ -413,7 +413,7 @@ int price=56,payment=100;
 ```c
 int price,payment;
 printf("请输入该商品价格（元）：");
-scanf("%d",&price); //scan 是扫描的意思，f 同样是 format 的简写，scanf() 函数的功能就是格式化扫描,扫描什么？扫描字符呗，以回车为结束符（不计入输入中）将输入的字符以十进制整数的格式解析，&price 的意思就是将解析出来的值复制一份赋给 price
+scanf("%d",&price); //scan是扫描的意思，f同样是format的简写，scanf()函数的功能就是格式化扫描,扫描什么？扫描字符呗，以回车为结束符（不计入输入中）将输入的字符以十进制整数的格式解析，&price的意思就是将解析出来的值复制一份赋给price
 printf("请输入支付的金额（元）：");
 scanf("%d",&payment); //同上
 ```
@@ -429,9 +429,9 @@ int main(){
     int price;
     int payment;
     printf("请输入该商品价格（元）：");
-    scanf("%d",&price); //键盘输入的方式初始化 price
+    scanf("%d",&price); //键盘输入的方式初始化price
     printf("请输入支付的金额（元）：");
-    scanf("%d",&payment); //键盘输入的方式初始化 payment
+    scanf("%d",&payment); //键盘输入的方式初始化payment
     int change=payment-price;
     printf("找零（元）：%d\n",change);
     return 0;
@@ -453,7 +453,7 @@ int main(){
     int price;
     int payment;
     printf("请输入该商品价格（元）：");
-    scanf("%d",&price); //键盘输入的方式初始化 price
+    scanf("%d",&price); //键盘输入的方式初始化price
     int change=payment-price;
     printf("找零（元）：%d\n",change);
     return 0;
@@ -473,7 +473,7 @@ int main(){
 　　变量定义的一般形式：
 
 ```c
-const <类型名称> <常量名称>; //const 是一个修饰符，是 constant（常数）的简写，规定常量名称中的字母都为大写，这是命名规范
+const <类型名称> <常量名称>; //const是一个修饰符，是constant（常数）的简写，规定常量名称中的字母都为大写，这是命名规范
 ```
 
 ### 常量和变量的相同点和不同点
@@ -495,7 +495,7 @@ int main(){
     const int PRICE=56;
     int payment;
     printf("请输入支付的金额（元）：");
-    scanf("%d",&payment); //键盘输入的方式初始化 payment
+    scanf("%d",&payment); //键盘输入的方式初始化payment
     int change=payment-PRICE;
     printf("找零（元）：%d\n",change);
     return 0;
@@ -513,9 +513,9 @@ int main(){
     const int PRICE=56;
     int payment;
     printf("请输入该商品价格（元）：");
-    scanf("%d",&PRICE); //尝试修改 PRICE
+    scanf("%d",&PRICE); //尝试修改PRICE
     printf("请输入支付的金额（元）：");
-    scanf("%d",&payment); //键盘输入的方式初始化 payment
+    scanf("%d",&payment); //键盘输入的方式初始化payment
     int change=payment-PRICE;
     printf("找零（元）：%d\n",change);
     return 0;
@@ -563,7 +563,7 @@ int main(){
     int foot; //英尺
     int inch; //英寸
     scanf("%d,%d",&foot,&inch);
-    printf("身高是%f米\n",((foot+inch/12.0)*0.3048)); //12 是整形常量，默认是 int 类型，12.0 是浮点型常量，默认是 double 类型
+    printf("身高是%f米\n",((foot+inch/12.0)*0.3048)); //12是整形常量，默认是int类型，12.0是浮点型常量，默认是double类型
     return 0;
 }
 ```
