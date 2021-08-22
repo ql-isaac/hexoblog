@@ -25,7 +25,7 @@ categories:
 
 3. 进入[ Node.js 官方网站](https://nodejs.org/zh-cn/)，点击下载 LTX（Long Term Support）版，我下载的是[ v12.14.0 版本的 msi 安装程序](https://nodejs.org/download/release/v12.14.0/)，安装步骤非常简单，一直 next；
 
-4. 进入[ Git 官方网站下载页面](https://git-scm.com/downloads)，选择 Windows 版本的 Git 下载，我下载的是[ v2.25.0 版本的 exe 安装程序(提取码：u7fp)](https://pan.baidu.com/s/1YJxkbnkwx-9x4Hr5Sz4jMQ)，[安装和配置步骤](https://blog.ql-isaac.cn/2020/01/24/What-is-Git/#more)记录在另一篇文章中；
+4. 进入[ Git 官方网站下载页面](https://git-scm.com/downloads)，选择 Windows 版本的 Git 下载，我下载的是[ v2.25.0 版本的 exe 安装程序(提取码：u7fp)](https://pan.baidu.com/s/1YJxkbnkwx-9x4Hr5Sz4jMQ)，[安装和配置步骤](https://blog.ql-isaac.cn/2020/01/24/What_is_Git/#more)记录在另一篇文章中；
 
 ### 安装 Hexo
 

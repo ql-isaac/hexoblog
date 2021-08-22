@@ -8,6 +8,8 @@ categories:
 
 　　"hub"，乃中心之意，当你看了我的另外一篇[《什么是 Git》](https://www.ql-isaac.cn/2020/01/24/What_is_Git/)，对 Git 已经熟悉一些的时候，就会自然明白"GitHub"的含义。
 
+<!-- more -->
+
 ## git commit 规范化
 
 ### 命令格式

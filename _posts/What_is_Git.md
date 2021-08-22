@@ -88,17 +88,17 @@ categories:
 16. 全局用户信息配置：分别输入以下两个命令回车执行，无提示表示命令执行成功，可以用`git config --list`来查看配置好的信息；
 
    ```bash
-   $ git config --global user.name "<自己的 Github 用户名>"
+   git config --global user.name "<自己的 Github 用户名>"
    ```
 
    ```bash
-   $ git config --global user.email "<自己的 Github 邮箱>"
+   git config --global user.email "<自己的 Github 邮箱>"
    ```
 
 17. 生成 SSH 秘钥：输入以下命令回车执行，然后连敲三次回车键，此时打开 .ssh 文件夹，其位于自己的 Windows 用户文件夹下，如下图，用文本编辑器打开 id_rsa.pub，Ctrl+A，复制里面全部的内容；
 
    ```bash
-   $ ssh-keygen -t rsa
+   ssh-keygen -t rsa
    ```
 
    ![SSH](https://image.ql-isaac.cn/What_is_Git/SSH.png)
@@ -108,7 +108,7 @@ categories:
 19. 测试一下，输入以下命令回车执行，输入 yes，再回车，有如下提示，表示本机和自己的 GitHub 绑定成功。
 
    ```bash
-   $ ssh -T git@github.com
+   ssh -T git@github.com
    ```
 
    ```
