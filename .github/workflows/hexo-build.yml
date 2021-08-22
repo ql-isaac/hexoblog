@@ -18,7 +18,9 @@ jobs:
           cache: 'npm'
           cache-dependency-path: Butterfly/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd Butterfly/
+          npm install
       - name: Deploy
         run: |
           cp -r _posts/ Butterfly/source/_posts/
@@ -45,7 +47,9 @@ jobs:
           cache: 'npm'
           cache-dependency-path: NexT/package-lock.json
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd NexT/
+          npm install
       - name: Deploy
         run: |
           cp -r _posts/ NexT/source/_posts/
