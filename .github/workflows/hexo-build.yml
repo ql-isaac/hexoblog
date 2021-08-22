@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '12.14.0'
           cache: 'npm'
+          cache-dependency-path: Butterfly/package-lock.json
       - name: Install dependencies
         run: npm install
       - name: Deploy
@@ -42,6 +43,7 @@ jobs:
         with:
           node-version: '12.14.0'
           cache: 'npm'
+          cache-dependency-path: NexT/package-lock.json
       - name: Install dependencies
         run: npm install
       - name: Deploy
