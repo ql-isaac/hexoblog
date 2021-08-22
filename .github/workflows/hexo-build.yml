@@ -1,40 +1,27 @@
-name: hexo-deploy
+name: hexo-build
 on:
   push:
     branches:
       - main
+env:
+  TZ: Asia/Shanghai
 jobs:
   Butterfly-build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: ['lts/erbium']
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@2
+      - name: Install Node.js v12.14.0
+        uses: actions/setup-node@2
         with:
-          persist-credentials: false
-          fetch-depth: 0
-        env:
-          TZ: Asia/Shanghai
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@main
-        with:
-          node-version:  ${{ matrix.node }}
-      - name: Handle npm cache
-        uses: actions/cache@main
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/Butterfly/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '12.14.0'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
       - name: Deploy
-        env:
-          TZ: Asia/Shanghai
         run: |
           cp -r _posts/ Butterfly/source/_posts/
           cd Butterfly/
-          npm install
           npm run build
           cd public/
           git config --global init.defaultBranch master
@@ -47,35 +34,20 @@ jobs:
           git push -f -q "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_BUTTERFLY}}" master
   NexT-build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: ['lts/erbium']
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@2
+      - name: Install Node.js v12.14.0
+        uses: actions/setup-node@2
         with:
-          persist-credentials: false
-          fetch-depth: 0
-        env:
-          TZ: Asia/Shanghai
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@main
-        with:
-          node-version:  ${{ matrix.node }}
-      - name: Handle npm cache
-        uses: actions/cache@main
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/NexT/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '12.14.0'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm install
       - name: Deploy
-        env:
-          TZ: Asia/Shanghai
         run: |
           cp -r _posts/ NexT/source/_posts/
           cd NexT/
-          npm install
           npm run build
           cd public/
           git config --global init.defaultBranch master
