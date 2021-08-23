@@ -27,6 +27,4 @@ categories:
 
 1. VMware pro 15安装完成后，启动，点击创建新的虚拟机；
 
-![创建新的虚拟机](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Linux-Learning(1)/创建新的虚拟机.png)
-
-2. 
+    ![创建新的虚拟机](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Linux-Learning(1)/创建新的虚拟机.png)

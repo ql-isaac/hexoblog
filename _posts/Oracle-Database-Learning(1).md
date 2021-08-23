@@ -22,102 +22,102 @@ categories:
 
 1. 打开 database 文件夹，双击 setup.exe 安装，刚开始有一个如下图的错误，解决办法是编辑 database 下的 stage 下的 cvu 下的 cvu_prereq.xml，在 <CERTIFIED_SYSTEMS></CERTIFIED_SYSTEMS> 间的最后位置添加以下代码，保存并关闭，重新安装即可。
 
-![错误](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/错误.png)
+    ![错误](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/错误.png)
 
-```xml
-<OPERATING_SYSTEM RELEASE="6.2">
-           <VERSION VALUE="3"/>
-           <ARCHITECTURE VALUE="64-bit"/>
-           <NAME VALUE="Windows 10"/>
-           <ENV_VAR_LIST>
-               <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
-           </ENV_VAR_LIST>
-</OPERATING_SYSTEM>
-```
+    ```xml
+    <OPERATING_SYSTEM RELEASE="6.2">
+            <VERSION VALUE="3"/>
+            <ARCHITECTURE VALUE="64-bit"/>
+            <NAME VALUE="Windows 10"/>
+            <ENV_VAR_LIST>
+                <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+            </ENV_VAR_LIST>
+    </OPERATING_SYSTEM>
+    ```
 
 2. 不更新，下一步；
 
-![不更新](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/不更新.png)
+    ![不更新](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/不更新.png)
 
 3. 直接下一步；
 
-![创建](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/创建.png)
+    ![创建](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/创建.png)
 
 4. 选择服务器类，下一步；
 
-![服务器类](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/服务器类.png)
+    ![服务器类](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/服务器类.png)
 
 5. 直接下一步；
 
-![单实例](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/单实例.png)
+    ![单实例](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/单实例.png)
 
 6. 选择高级安装，下一步；
 
-![高级安装](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/高级安装.png)
+    ![高级安装](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/高级安装.png)
 
 7. 默认即可，下一步；
 
-![语言](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/语言.png)
+    ![语言](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/语言.png)
 
 8. 就选择企业版，下一步；
 
-![企业版](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/企业版.png)
+    ![企业版](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/企业版.png)
 
 9. 默认即可，下一步；
 
-![默认即可](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/默认即可.png)
+    ![默认即可](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/默认即可.png)
 
 10. 默认即可，下一步；
 
-![下一步](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/下一步.png)
+    ![下一步](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/下一步.png)
 
 11. 自定义 SID 的名称，不改，就默认也行；
 
-![自定义SID的名称](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/自定义SID的名称.png)
+    ![自定义SID的名称](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/自定义SID的名称.png)
 
 12. 使用 Unicode 字符集；
 
-![Unicode](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/Unicode.png)
+    ![Unicode](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/Unicode.png)
 
 13. 勾选创建具有示例方案的数据库，下一步；
 
-![创建具有示例方案的数据库](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/创建具有示例方案的数据库.png)
+    ![创建具有示例方案的数据库](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/创建具有示例方案的数据库.png)
 
 14. 默认即可，下一步；
 
-![过](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/过.png)
+    ![过](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/过.png)
 
 15. 默认即可，下一步；
 
-![再过](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/再过.png)
+    ![再过](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/再过.png)
 
 16. 不启动自动备份，下一步；
 
-![不自动备份](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/不自动备份.png)
+    ![不自动备份](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/不自动备份.png)
 
 17. 个人学习用，为了方便，设置为对所有账户使用相同的口令（口令必须以字母开头），下一步；
 
-![设置口令](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/设置口令.png)
+    ![设置口令](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/设置口令.png)
 
 18. 检查到错误，可以忽略，勾选全部忽略，下一步；
 
-![检查到错误](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/检查到错误.png)
+    ![检查到错误](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/检查到错误.png)
 
 19. 点击完成，等待；
 
-![等待](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/等待.png)
+    ![等待](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/等待.png)
 
 20. 点击口令管理；
 
-![口令管理](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/口令管理.png)
+    ![口令管理](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/口令管理.png)
 
 21. 设置 SYS 用户密码为 change_on_install，设置 SYSTEM 用户密码为 manager，解锁 SCOTT 用户并设置密码为 tiger，解锁 SH 用户并设置密码为 sh；
 
-![设置四个用户的密码](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/设置四个用户的密码.png)
+    ![设置四个用户的密码](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/设置四个用户的密码.png)
 
 22. 安装完成；
 
-![完成](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/完成.png)
+    ![完成](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learning(1)/完成.png)
 
 ## SQL PLUS 的使用
 

@@ -31,212 +31,212 @@ categories:
 
 1. VMware pro 15 安装完成后，启动，点击创建新的虚拟机；
 
-   ![创建新的虚拟机](https://image.ql-isaac.cn/C-Learning(1)/创建新的虚拟机.png)
+    ![创建新的虚拟机](https://image.ql-isaac.cn/C-Learning(1)/创建新的虚拟机.png)
 
 2. 选择典型，下一步；
 
-   ![典型](https://image.ql-isaac.cn/C-Learning(1)/典型.png)
+    ![典型](https://image.ql-isaac.cn/C-Learning(1)/典型.png)
 
 3. 选择稍后安装操作系统，下一步；
 
-   ![选择稍后安装操作系统](https://image.ql-isaac.cn/C-Learning(1)/选择稍后安装操作系统.png)
+    ![选择稍后安装操作系统](https://image.ql-isaac.cn/C-Learning(1)/选择稍后安装操作系统.png)
 
 4. 客户机操作系统选择 Linux，版本选择 Ubuntu 64 位，下一步；
 
-   ![选择客户机操作系统](https://image.ql-isaac.cn/C-Learning(1)/选择客户机操作系统.png)
+    ![选择客户机操作系统](https://image.ql-isaac.cn/C-Learning(1)/选择客户机操作系统.png)
 
 5. 虚拟机名称和位置自定义，下一步；
 
-   ![虚拟机名称和位置](https://image.ql-isaac.cn/C-Learning(1)/虚拟机名称和位置.png)
+    ![虚拟机名称和位置](https://image.ql-isaac.cn/C-Learning(1)/虚拟机名称和位置.png)
 
 6. 磁盘容量自定义。我这里就设为 60GB，下一步，完成；
 
-   ![指定磁盘容量](https://image.ql-isaac.cn/C-Learning(1)/指定磁盘容量.png)
+    ![指定磁盘容量](https://image.ql-isaac.cn/C-Learning(1)/指定磁盘容量.png)
 
 7. 点击编辑此虚拟机，将处理器数量设为 4（一般为自己实体机处理器数量的一半）；
 
-   ![处理器数量](https://image.ql-isaac.cn/C-Learning(1)/处理器数量.png)
+    ![处理器数量](https://image.ql-isaac.cn/C-Learning(1)/处理器数量.png)
 
 8. 点击 CD/DVD (SATA)，选择使用 ISO 映像文件，浏览，选择 Ubuntu 18.04 LTS 系统的 ISO 映像文件，确定，点击开启此虚拟机，等待；
 
-   ![选择系统镜像](https://image.ql-isaac.cn/C-Learning(1)/选择系统镜像.png)
+    ![选择系统镜像](https://image.ql-isaac.cn/C-Learning(1)/选择系统镜像.png)
 
 9. 选择中文(简体)，再选择安装 Ubuntu；
 
-   ![中文简体](https://image.ql-isaac.cn/C-Learning(1)/中文简体.png)
+    ![中文简体](https://image.ql-isaac.cn/C-Learning(1)/中文简体.png)
 
 10. 继续；
 
-   ![继续](https://image.ql-isaac.cn/C-Learning(1)/继续.png)
+    ![继续](https://image.ql-isaac.cn/C-Learning(1)/继续.png)
 
 11. 勾选最后一个，继续；
 
-   ![勾选](https://image.ql-isaac.cn/C-Learning(1)/勾选.png)
+    ![勾选](https://image.ql-isaac.cn/C-Learning(1)/勾选.png)
 
 12. 现在安装；
 
-   ![现在安装](https://image.ql-isaac.cn/C-Learning(1)/现在安装.png)
+    ![现在安装](https://image.ql-isaac.cn/C-Learning(1)/现在安装.png)
 
 13. 继续；
 
-   ![再次确认](https://image.ql-isaac.cn/C-Learning(1)/再次确认.png)
+    ![再次确认](https://image.ql-isaac.cn/C-Learning(1)/再次确认.png)
 
 14. 在地图上点击，选择 shanghai，继续；
 
-   ![shanghai](https://image.ql-isaac.cn/C-Learning(1)/shanghai.png)
+    ![shanghai](https://image.ql-isaac.cn/C-Learning(1)/shanghai.png)
 
 15. 自定义信息，继续；
 
-   ![您是谁](https://image.ql-isaac.cn/C-Learning(1)/您是谁.png)
+    ![您是谁](https://image.ql-isaac.cn/C-Learning(1)/您是谁.png)
 
 16. 等待；
 
-   ![等待](https://image.ql-isaac.cn/C-Learning(1)/等待.png)
+    ![等待](https://image.ql-isaac.cn/C-Learning(1)/等待.png)
 
 17. 现在重启；
 
-   ![现在重启](https://image.ql-isaac.cn/C-Learning(1)/现在重启.png)
+    ![现在重启](https://image.ql-isaac.cn/C-Learning(1)/现在重启.png)
 
 18. 登录刚创建的用户。
 
-   ![登录](https://image.ql-isaac.cn/C-Learning(1)/登录.png)
+    ![登录](https://image.ql-isaac.cn/C-Learning(1)/登录.png)
 
 ### 安装 VMware Tools
 
 　　可以安装上 VMware Tools 让我们拥有最佳的 Ubuntu 18.04 LTS 操作体验，如在实体机上一般。首先点击左上方的虚拟机，再点击安装 VMware Tools，这时会在桌面出现一个 DVD，接下来具体安装过程如下：
 
-   ![安装 VMware_Tools](https://image.ql-isaac.cn/C-Learning(1)/安装VMware_Tools.gif)
+![安装 VMware_Tools](https://image.ql-isaac.cn/C-Learning(1)/安装VMware_Tools.gif)
 
 ### 设置阿里镜像
 
 1. 打开软件更新器；
 
-   ![软件更新器](https://image.ql-isaac.cn/C-Learning(1)/软件更新器.png)
+    ![软件更新器](https://image.ql-isaac.cn/C-Learning(1)/软件更新器.png)
 
 2. 一般会有更新提示，先不更新，点击设置；
 
-   ![设置](https://image.ql-isaac.cn/C-Learning(1)/设置.png)
+    ![设置](https://image.ql-isaac.cn/C-Learning(1)/设置.png)
 
 3. 点击 Ubuntu 软件，设置下载源；
 
-   ![Ubuntu 软件](https://image.ql-isaac.cn/C-Learning(1)/Ubuntu软件.png)
+    ![Ubuntu 软件](https://image.ql-isaac.cn/C-Learning(1)/Ubuntu软件.png)
 
 4. 点击其他站点，选择阿里云镜像站点，需要输入用户密码认证；
 
-   ![aliyun](https://image.ql-isaac.cn/C-Learning(1)/aliyun.png)
+    ![aliyun](https://image.ql-isaac.cn/C-Learning(1)/aliyun.png)
 
 5. 重新载入可用软件包列表；
 
-   ![重新载入](https://image.ql-isaac.cn/C-Learning(1)/重新载入.png)
+    ![重新载入](https://image.ql-isaac.cn/C-Learning(1)/重新载入.png)
 
 6. 现在和以后就可以高速安装更新或软件包了，点击立即安装；
 
-   ![更新](https://image.ql-isaac.cn/C-Learning(1)/更新.png)
+    ![更新](https://image.ql-isaac.cn/C-Learning(1)/更新.png)
 
 ### 美化自己的 Ubuntu 18.04 LTS
 
 1. 右键点击桌面，在终端打开，输入以下命令回车，输入用户密码安装 gnome-tweak-tool 软件包；
 
-   ```bash
-   sudo apt install gnome-tweak-tool
-   ```
+    ```bash
+    sudo apt install gnome-tweak-tool
+    ```
 
 2. 火狐浏览器访问 [GNOME Shell Extensions](https://extensions.gnome.org)，点击安装该浏览器扩展；
 
-   ![安装浏览器扩展](https://image.ql-isaac.cn/C-Learning(1)/安装浏览器扩展.png)
+    ![安装浏览器扩展](https://image.ql-isaac.cn/C-Learning(1)/安装浏览器扩展.png)
 
 3. 刷新一下浏览器，这时会有错误信息，右键点击桌面，在终端打开，输入以下命令回车，输入用户密码安装 chrome-gnome-shell 软件包，再刷新一下浏览器，错误消失了；
 
-   ```bash
-   sudo apt install chrome-gnome-shell
-   ```
+    ```bash
+    sudo apt install chrome-gnome-shell
+    ```
 
-   ![错误](https://image.ql-isaac.cn/C-Learning(1)/错误.png)
+    ![错误](https://image.ql-isaac.cn/C-Learning(1)/错误.png)
 
 4. 分别点击两个 GNOME Shell 扩展：User Themes 和 Dash to Dock，将它们都开启（即安装）；
 
-   ![两个扩展](https://image.ql-isaac.cn/C-Learning(1)/两个扩展.png)
+    ![两个扩展](https://image.ql-isaac.cn/C-Learning(1)/两个扩展.png)
 
 5. 在安装完 Dash to Dock 时，你会发现侧边栏消失了，相信这是大多数人想要的效果；
 
-   ![侧边栏消失了](https://image.ql-isaac.cn/C-Learning(1)/侧边栏消失了.png)
+    ![侧边栏消失了](https://image.ql-isaac.cn/C-Learning(1)/侧边栏消失了.png)
 
 6. 打开优化；
 
-   ![优化](https://image.ql-isaac.cn/C-Learning(1)/优化.png)
+    ![优化](https://image.ql-isaac.cn/C-Learning(1)/优化.png)
 
 7. 打开 Dash to Dock 的设置；
 
-   ![DashtoDock 设置](https://image.ql-isaac.cn/C-Learning(1)/DashtoDock设置.png)
+    ![DashtoDock 设置](https://image.ql-isaac.cn/C-Learning(1)/DashtoDock设置.png)
 
 8. 打开智能隐藏的设置；
 
-   ![智能隐藏的设置](https://image.ql-isaac.cn/C-Learning(1)/智能隐藏的设置.png)
+    ![智能隐藏的设置](https://image.ql-isaac.cn/C-Learning(1)/智能隐藏的设置.png)
 
 9. 勾选在全屏状态下启用，不勾选推压以显示......，调整显示超时时间为 0.2 秒，关闭窗口，此时，再打开火狐浏览器，当把鼠标移动到左侧，侧边栏自动显示，移走鼠标，侧边栏自动隐藏，相信这同样是大多数人想要的效果；
 
-   ![设置和调整](https://image.ql-isaac.cn/C-Learning(1)/设置和调整.png)
+    ![设置和调整](https://image.ql-isaac.cn/C-Learning(1)/设置和调整.png)
 
-   ![智能隐藏](https://image.ql-isaac.cn/C-Learning(1)/智能隐藏.gif)
+    ![智能隐藏](https://image.ql-isaac.cn/C-Learning(1)/智能隐藏.gif)
 
 10. 打开火狐浏览器，进入[该网址](https://www.gnome-look.org/p/1275087/)下载 McMojave 主题，等待，确定；
 
-   ![下载主题](https://image.ql-isaac.cn/C-Learning(1)/下载主题.png)
+    ![下载主题](https://image.ql-isaac.cn/C-Learning(1)/下载主题.png)
 
 11. 提取到下载中，点击显示文件；
 
-   ![提取](https://image.ql-isaac.cn/C-Learning(1)/提取.png)
+    ![提取](https://image.ql-isaac.cn/C-Learning(1)/提取.png)
 
 12. 右键，在终端打开；
 
-   ![右键](https://image.ql-isaac.cn/C-Learning(1)/右键.png)
+    ![右键](https://image.ql-isaac.cn/C-Learning(1)/右键.png)
 
 13. 输入以下命令回车，输入用户密码，移动 Mojave-light 目录；
 
-   ```bash
-   sudo mv Mojave-light/ /usr/share/themes/
-   ```
+    ```bash
+    sudo mv Mojave-light/ /usr/share/themes/
+    ```
 
 14. 打开优化，选择Mojave-light主题，就能看到效果了；
 
-   ![更换主题](https://image.ql-isaac.cn/C-Learning(1)/更换主题.gif)
+    ![更换主题](https://image.ql-isaac.cn/C-Learning(1)/更换主题.gif)
 
 15. [进入该网址](https://www.gnome-look.org/p/1305429/)，下载 McMojave-circle 图标，等待，确定；
 
-   ![下载图标](https://image.ql-isaac.cn/C-Learning(1)/下载图标.png)
+    ![下载图标](https://image.ql-isaac.cn/C-Learning(1)/下载图标.png)
 
 16. 同上，提取到下载中，点击显示文件，右键，在终端打开，输入以下命令回车，输入用户密码，移动 McMojave-circle 目录；
 
-   ```bash
-   sudo mv McMojave-circle/ /usr/share/icons/
-   ```
+    ```bash
+    sudo mv McMojave-circle/ /usr/share/icons/
+    ```
 
 17. 打开优化，选择 McMojave-circle 图标，就能看到效果了；
 
-   ![更换图标](https://image.ql-isaac.cn/C-Learning(1)/更换图标.gif)
+    ![更换图标](https://image.ql-isaac.cn/C-Learning(1)/更换图标.gif)
 
 18. 有一个地方忘记了，打开优化，选择 shell 为 Mojave-light；
 
-   ![更换 shell](https://image.ql-isaac.cn/C-Learning(1)/更换shell.gif)
+    ![更换 shell](https://image.ql-isaac.cn/C-Learning(1)/更换shell.gif)
 
 19. 可以在 Dash to Dock 设置中设置侧边栏的位置在底部；
 
-   ![设置在底部](https://image.ql-isaac.cn/C-Learning(1)/设置在底部.png)
+    ![设置在底部](https://image.ql-isaac.cn/C-Learning(1)/设置在底部.png)
 
 20. 最后，在优化->窗口中，设置标题栏按钮在左边，右键桌面更换个壁纸，至此，美化算是告一段落了。
 
-<video id="video1" preload controls loop style="height: 100%;width: 100%;object-fit: cover;"></video>
-<script>
-  if (Hls.isSupported()) {
-    var video1 = document.getElementById('video1');
-    var hls = new Hls();
-    hls.loadSource('https://cdn.jsdelivr.net/gh/isaac-ql/post-videos-1/美化/美化.m3u8');
-    hls.attachMedia(video1);
-    hls.on(Hls.Events.MANIFEST_PARSED,function() {
-      video.play();
-  });
-  }
-</script>
+    <video id="video1" preload controls loop style="height: 100%;width: 100%;object-fit: cover;"></video>
+    <script>
+      if (Hls.isSupported()) {
+        var video1 = document.getElementById('video1');
+        var hls = new Hls();
+        hls.loadSource('https://cdn.jsdelivr.net/gh/isaac-ql/post-videos-1/美化/美化.m3u8');
+        hls.attachMedia(video1);
+        hls.on(Hls.Events.MANIFEST_PARSED,function() {
+          video.play();
+      });
+      }
+    </script>
 
 ### 安装 build-essential 软件包和 Vim 文本编辑器
 

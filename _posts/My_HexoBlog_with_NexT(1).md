@@ -24,15 +24,12 @@ categories:
 ### 安装 Node.js，安装 Git 和 Git 的配置
 
 3. 进入[ Node.js 官方网站](https://nodejs.org/zh-cn/)，点击下载 LTX（Long Term Support）版，我下载的是[ v12.14.0 版本的 msi 安装程序](https://nodejs.org/download/release/v12.14.0/)，安装步骤非常简单，一直 next；
-
 4. 进入[ Git 官方网站下载页面](https://git-scm.com/downloads)，选择 Windows 版本的 Git 下载，我下载的是[ v2.25.0 版本的 exe 安装程序(提取码：u7fp)](https://pan.baidu.com/s/1YJxkbnkwx-9x4Hr5Sz4jMQ)，[安装和配置步骤](https://blog.ql-isaac.cn/2020/01/24/What_is_Git/#more)记录在另一篇文章中；
 
 ### 安装 Hexo
 
 5. 在合适的路径下新建一个文件夹，文件夹名自定义，例如 HexoBlog，作为<存储 HexoBlog 的文件夹>；
-
 6. 打开<存储 HexoBlog 的文件夹>，在空白处点鼠标的右键，选择 Git Bash Here 进入终端；
-
 7. 安装 cnpm 提高下载速度，以后下载插件都可用 cnpm（即将下载某一个插件的命令中的 npm 改为 cnpm）。在终端输入如下命令，回车，等待 cnpm 下载完成；
 
     ```bash
@@ -47,7 +44,7 @@ categories:
 
 9. 在终端输入`hexo init`，等待，可在<存储 HexoBlog 的文件夹>中看到生成了如下图所示的文件。
 
-![初始文件](https://image.ql-isaac.cn/My_HexoBlog_with_NexT(1)/%E5%88%9D%E5%A7%8B%E6%96%87%E4%BB%B6.png)
+    ![初始文件](https://image.ql-isaac.cn/My_HexoBlog_with_NexT(1)/%E5%88%9D%E5%A7%8B%E6%96%87%E4%BB%B6.png)
 
 ### 本地部署我的 HexoBlog
 
@@ -82,7 +79,6 @@ categories:
     ```
 
 13. 在终端输入`hexo g -d`，回车，进行博客的最终操作——生成静态文件后立即部署到 Github Pages 中；
-
 14. [大功告成](https://ql-isaac.github.io)（将 ql-isaac 替换成自己的 Github 用户名）。
 
 ### 参考

@@ -87,105 +87,99 @@ categories:
 
 16. 全局用户信息配置：分别输入以下两个命令回车执行，无提示表示命令执行成功，可以用`git config --list`来查看配置好的信息；
 
-   ```bash
-   git config --global user.name "<自己的 Github 用户名>"
-   ```
+    ```bash
+    git config --global user.name "<自己的 Github 用户名>"
+    ```
 
-   ```bash
-   git config --global user.email "<自己的 Github 邮箱>"
-   ```
+    ```bash
+    git config --global user.email "<自己的 Github 邮箱>"
+    ```
 
 17. 生成 SSH 秘钥：输入以下命令回车执行，然后连敲三次回车键，此时打开 .ssh 文件夹，其位于自己的 Windows 用户文件夹下，如下图，用文本编辑器打开 id_rsa.pub，Ctrl+A，复制里面全部的内容；
 
-   ```bash
-   ssh-keygen -t rsa
-   ```
+    ```bash
+    ssh-keygen -t rsa
+    ```
 
-   ![SSH](https://image.ql-isaac.cn/What_is_Git/SSH.png)
+    ![SSH](https://image.ql-isaac.cn/What_is_Git/SSH.png)
 
 18. Github 的 SSH 公钥配置：登录自己的 Github 账号，点击右上角的头像，点击 Setting，点击左侧的 SSH and GPG keys，点击右侧的 New SSH key，填写 Tile，粘贴刚复制的内容为 Key，最后点击 Add SSH key；
-
 19. 测试一下，输入以下命令回车执行，输入 yes，再回车，有如下提示，表示本机和自己的 GitHub 绑定成功。
 
-   ```bash
-   ssh -T git@github.com
-   ```
+    ```bash
+    ssh -T git@github.com
+    ```
 
-   ```
-   Hi <自己的 Github 用户名>! You've successfully authenticated, but GitHub does not provide shell access.
-   ```
+    ```
+    Hi <自己的 Github 用户名>! You've successfully authenticated, but GitHub does not provide shell access.
+    ```
 
 ### Ubuntu 18.04 LTS 上安装和配置 Git
 
 1. 相比在 Windows 上，在 Linux 上安装和配置 Git 的步骤就比较少了。在终端输入以下命令回车执行，确保系统和 apt 包列表完全更新；
 
-   ```bash
-   sudo apt-get update -y
-   ```
-![更新](https://image.ql-isaac.cn/What_is_Git/更新.png)
+    ```bash
+    sudo apt-get update -y
+    ```
+    ![更新](https://image.ql-isaac.cn/What_is_Git/更新.png)
 2. 在终端输入以下命令回车，安装 Git，可再输入以下命令查看 Git 版本；
 
-   ```bash
-   sudo apt install git
-   ```
+    ```bash
+    sudo apt install git
+    ```
 
-   ```bash
-   git --version
-   ```
+    ```bash
+    git --version
+    ```
 
-   ![安装Git](https://image.ql-isaac.cn/What_is_Git/安装Git.gif)
+    ![安装Git](https://image.ql-isaac.cn/What_is_Git/安装Git.gif)
 
 3. 全局用户信息配置：分别输入以下两个命令回车执行，无提示表示命令执行成功，可以用`git config --list`来查看配置好的信息；
 
-   ```bash
-   git config --global user.name "<自己的 Github 用户名>"
-   ```
+    ```bash
+    git config --global user.name "<自己的 Github 用户名>"
+    ```
 
-   ```bash
-   git config --global user.email "<自己的 Github 邮箱>"
-   ```
+    ```bash
+    git config --global user.email "<自己的 Github 邮箱>"
+    ```
 
 4. 生成 SSH 秘钥：输入以下命令回车执行，然后连敲三次回车键；
 
-   ```bash
-   ssh-keygen -t rsa
-   ```
+    ```bash
+    ssh-keygen -t rsa
+    ```
 
 5. 输入以下命令回车，输入用户密码安装 Vim 文本编辑器；
 
-   ```bash
-   sudo apt-get install vim
-   ```
+    ```bash
+    sudo apt-get install vim
+    ```
 
 6. 执行以下命令，用 Vim 打开公钥文件，复制其中的内容（不要复制多了，也不要复制少了）；
 
-   ```bash
-   vim /home/<自己的用户名>/.ssh/id_rsa.pub
-   ```
+    ```bash
+    vim /home/<自己的用户名>/.ssh/id_rsa.pub
+    ```
 
 7. 登录自己的 Github 账号，点击右上角的头像，点击 Setting，点击左侧的 SSH and GPG keys，点击右侧的 New SSH key，填写Tile，粘贴刚复制的内容为 Key，最后点击 Add SSH key；
-
 8. 测试一下，输入以下命令回车执行，有如下提示，表示本机和自己的 GitHub 绑定成功。
-   ```bash
-   ssh -T git@github.com
-   Hi <自己的GitHub用户名>! You've successfully authenticated, but GitHub does not provide shell access.
-   ```
+
+    ```bash
+    ssh -T git@github.com
+    Hi <自己的GitHub用户名>! You've successfully authenticated, but GitHub does not provide shell access.
+    ```
 
 ## Git 的工作流程
 
 1. 克隆 Git 资源作为工作副本；
-
 2. 在工作副本中编辑、添加或修改文件；
-
 3. 如果其他人提交了修改，你可以选择更新工作副本；
-
 4. 在提交前查看修改；
-
 5. 提交修改；
-
 6. 在修改完成后，如果发现错误，可以撤回提交并再次修改并提交。
 
-![Git 的工作流程](https://image.ql-isaac.cn/What_is_Git/Git的工作流程.jpg)
+    ![Git 的工作流程](https://image.ql-isaac.cn/What_is_Git/Git的工作流程.jpg)
 
 ## Git 工作区、暂存区和版本库
 
@@ -198,14 +192,9 @@ categories:
 ![Git 工作区、暂存区和版本库](https://image.ql-isaac.cn/What_is_Git/Git工作区、暂存区和版本库.jpg)
 
 1. 当对当前工作区编辑（M）、添加（A）或删除（D）的文件执行 git add 命令时，暂存区的目录树被更新；
-
 2. 当执行提交操作（git commit）时，暂存区转化为版本库的下一次提交；
-
 3. 当执行`git reset HEAD`命令时，暂存区的目录树会被重写，被版本库最新版本（HEAD）替换，但是工作区不受影响；
-
 4. 当执行`git checkout .`或者`git checkout -- <file>`命令时，会用暂存区全部或指定的文件替换工作区的文件。这个操作很危险，会清除工作区中未添加到暂存区的改动；
-
 5. 当执行`git rm --cached <file>`命令时，会直接从暂存区删除文件，工作区则不做出改变；
-
 6. 当执行`git checkout HEAD .`或者`git checkout HEAD <file>`命令时，会用版本库最新版本（HEAD）全部或者部分文件替换暂存区以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未添加到暂存区的改动，也会清除暂存区中未提交的改动。
 
