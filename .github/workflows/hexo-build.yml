@@ -23,6 +23,7 @@ jobs:
           npm install
       - name: Deploy
         run: |
+          rm -f _posts
           cp -r _posts/ Butterfly/source/_posts/
           cd Butterfly/
           npm run build
@@ -52,6 +53,7 @@ jobs:
           npm install
       - name: Deploy
         run: |
+          rm -f _posts
           cp -r _posts/ NexT/source/_posts/
           cd NexT/
           npm run build
