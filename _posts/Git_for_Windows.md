@@ -4,7 +4,7 @@ date: 2021-01-03 15:27:43
 updated: 2021-08-22 16:14:00
 cover: https://image.ql-isaac.cn/Git.gif
 tags:
- - Windows 10
+ - Git for Windows
 categories:
  - Git 和 GitHub 从入门到实践
 ---

@@ -7,6 +7,7 @@ tags:
  - Node.js v12.14.0
  - Hexo v4.2.0
  - Git v2.25.0.windows.1
+ - Git for Windows
  - GitHub
 categories: 
  - 我的 HexoBlog 的诞生

@@ -3,8 +3,8 @@ title: 什么是 Git？
 date: 2020-01-24 22:53:47
 cover: https://image.ql-isaac.cn/Git.gif
 tags:
- - Git v2.25.0.windows.1
- - Git v2.17.1
+ - Git for Windows
+ - Git
  - Windows 10 企业版 LTSC
  - Ubuntu 18.04 LTS
 categories: 
