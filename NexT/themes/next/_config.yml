@@ -40,10 +40,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon.png
-  medium: /images/favicon.png
-  apple_touch_icon: /images/favicon.png
-  safari_pinned_tab: /images/favicon.png
+  small: https://cdn.jsdelivr.net/gh/ql-isaac/nav-images-1/favicon-b.png
+  medium: https://cdn.jsdelivr.net/gh/ql-isaac/nav-images-1/favicon-b.png
+  apple_touch_icon: https://cdn.jsdelivr.net/gh/ql-isaac/nav-images-1/favicon-b.png
+  safari_pinned_tab: https://cdn.jsdelivr.net/gh/ql-isaac/nav-images-1/favicon-b.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
