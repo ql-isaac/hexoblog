@@ -29,7 +29,7 @@ npm，即 Node Package Manager，是随同 NodeJS 一起安装的包管理工具
 npm adduser
 ```
 
-接着执行如下命令进行初始化，依次填写信息，如下图，最后回车确认。
+接着执行如下命令进行初始化，依次填写信息，如下图，回车确认。
 
 ```bash
 npm init
