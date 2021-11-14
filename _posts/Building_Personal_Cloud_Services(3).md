@@ -5,7 +5,7 @@ updated: 2021-11-13 12:53:21
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
  - frp v0.37.1
- - Raspberry Pi 4 Model B
+ - Raspberry Pi OS with desktop
  - TencentCloud Lighthouse
 categories:
  - 内网穿透
@@ -21,9 +21,11 @@ categories:
 
 ## 安装 frps
 
-首先是去 frp 仓库下载最新的安装包。如下图，这里有许多的版本，我们执行`uname -i`可查看硬件的平台，我这里是 x86_64，应该选择下载 amd64 版本。下载完毕后上传到无忧实例家目录下。
+首先是去 frp 仓库下载最新的安装包。如下图，这里有许多的版本，我们 SSH 连接无忧实例执行`uname -i`可查看其硬件平台，是 x86_64，则应该下载 amd64 版本的。
 
 ![下载frp](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/下载frp.png)
+
+下载完毕后上传到无忧实例家目录下。
 
 解压缩到家目录：
 
@@ -42,8 +44,8 @@ vim ~/frp_0.37.1_linux_amd64/frps.ini
 ```diff
 [common]
 bind_port = 7000
-++authentication_method = token
-++token = <一串字符>
++authentication_method = token
++token = <一串字符>
 ```
 
 启动 frps：
@@ -107,7 +109,7 @@ sudo systemctl enable --now frps
 
 ## 安装 frpc
 
-SSH 连接树莓派4B，执行`uname -i`，是 armv71，应该选择下载 arm 版本，如下图。
+SSH 连接树莓派4B，执行`uname -i`，是 armv71，应该下载 arm 版本的，如下图。
 
 ![arm](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/arm.png)
 
