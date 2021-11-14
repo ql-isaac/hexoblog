@@ -204,29 +204,31 @@ Jira 也可以使用 5.1 版本的 JDBC driver[^5]，那就不用再下了。
 
 1. 创建安装目录：
 
-   ```bash
-   mkdir ~/Atlassian/jirasoftware
-   ```
+```bash
+mkdir ~/Atlassian/jirasoftware
+```
 2. 解压压缩包到安装目录：
 
-   ```bash
-   tar -xzf ~/Atlassian/atlassian-jira-software-8.13.11.tar.gz -C ~/Atlassian/jirasoftware
-   ```
+```bash
+tar -xzf ~/Atlassian/atlassian-jira-software-8.13.11.tar.gz -C ~/Atlassian/jirasoftware
+```
 3. 复制下载好的 MySQL JDBC Drive 到相应目录：
 
-   ```bash
-   cp ~/Atlassian/mysql-connector-java-5.1.49.jar ~/Atlassian/jirasoftware/atlassian-jira-software-8.13.11-standalone/lib
-   ```
+```bash
+cp ~/Atlassian/mysql-connector-java-5.1.49.jar ~/Atlassian/jirasoftware/atlassian-jira-software-8.13.11-standalone/lib
+```
+
 4. 创建 Jira Software 的家目录，这是应用产生的数据的存放之处：
 
-   ```bash
-   mkdir ~/Atlassian/jirasoftware/jirasoftware-home
-   ```
+```bash
+mkdir ~/Atlassian/jirasoftware/jirasoftware-home
+```
+
 5. 创建了家目录，就要告诉 Jira Software 家目录在哪儿，同样是编辑 .bashrc，在文件的末尾空一格，追加下面内容：
 
-   ```
-   export JIRA_HOME=~/Atlassian/jirasoftware/jirasoftware-home
-   ```
+```
+export JIRA_HOME=~/Atlassian/jirasoftware/jirasoftware-home
+```
 
 ### 使用 Candy 代理 Jira Software
 
