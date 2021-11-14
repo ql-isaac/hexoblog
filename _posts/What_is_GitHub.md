@@ -1,14 +1,14 @@
 ---
 title: 什么是 GitHub？
 date: 2021-08-14 16:52:10
-cover: https://image.ql-isaac.cn/Git.gif
+cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/GitHub.png
 tag:
  - GitHub
 categories: 
  - Git 和 GitHub 从入门到实践
 ---
 
-　　"hub"，乃中心之意，当你看了我的另外一篇[《什么是 Git》](https://www.ql-isaac.cn/2020/01/24/What_is_Git/)，对 Git 已经熟悉一些的时候，就会自然明白"GitHub"的含义。
+"hub"，乃中心之意，当你看了我的另外一篇[《什么是 Git》](https://www.ql-isaac.cn/2020/01/24/What_is_Git/)，对 Git 已经熟悉一些的时候，就会自然明白"GitHub"的含义。
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ git commit -m "<emoji代码> <type>(<scope>): <subject>"
 
 ### emoji 代码
 
-　　[这里有一套约定俗成的 emoji 使用规范](https://gitmoji.dev/)，常用的如下表：
+[这里有一套约定俗成的 emoji 使用规范](https://gitmoji.dev/)，常用的如下表：
 
 | emoji                | emoji 代码                    | commit 说明                  |
 | :------------------- | :---------------------------- | :--------------------------- |
@@ -92,7 +92,7 @@ git commit -m "<emoji代码> <type>(<scope>): <subject>"
 
 ### type
 
-　　用于说明 commit 的类别，有下表所示的可选项：
+用于说明 commit 的类别，有下表所示的可选项：
 
 |    类别    |                             含义                             |
 | :--------: | :----------------------------------------------------------: |
@@ -110,18 +110,25 @@ git commit -m "<emoji代码> <type>(<scope>): <subject>"
 
 ### scope
 
-　　用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，scope 可以省略。如果 commit 影响了不止一个 scope，可以使用`*`。
+用于说明 commit 影响的范围，比如数据层、控制层、视图层等等，scope 可以省略。如果 commit 影响了不止一个 scope，可以使用`*`。
 
 ### subject
 
-　　这个就是 commit 的说明了，不超过 50 个字符，结尾不加标点符号。
+这个就是 commit 的说明了，不超过 50 个字符，结尾不加标点符号。
 
 ### 示例
 
-　　某次提交：
+某次提交：
 
 ```bash
 git commit -m ":art: style: 格式修改"
 ```
 
-　　GitHub 上的效果图：
+GitHub 上的效果图：
+
+![提交示例](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/提交示例.png)
+
+## Fork
+
+GitHub是一个宝库，每当发现一个有趣的仓库，我们不仅仅会去点一个Star（收藏）或Watch（关注），我们还会去Fork一下该开源仓库，这样，该仓库会被克隆一份成为自己的仓库，我们之后就可以独立地对这份自己的仓库进行更改，甚至可以以某次更改向原仓库发起拉取请求，成为原仓库的贡献者，不过这都是后话了，我们今天是想解决的是，我们Fork了某一仓库后，原仓库是不断有作者在更新，自己的仓库也想获得这些更新怎么办？以下是解决方案：
+

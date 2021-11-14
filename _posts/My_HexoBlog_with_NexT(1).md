@@ -3,17 +3,15 @@ title: 我的 HexoBlog 的诞生（一）
 date: 2020-01-24 22:53:24
 cover: https://image.ql-isaac.cn/Working-rafiki.png
 tags:
- - Windows 10 企业版 LTSC
- - Node.js v12.14.0
  - Hexo v4.2.0
  - Git v2.25.0.windows.1
- - Git for Windows
- - GitHub
+ - Node.js v12.14.0
+ - Windows 10 企业版 LTSC
 categories: 
  - 我的 HexoBlog 的诞生
 ---
 
-　　本文记录和讲解一下我的 HexoBlog 是如何一步一步被部署至 Github Pages 上的，可供大家参考。部署完成后可参考我的下一篇文章《我的 HexoBlog 的诞生（二）》对自己的 HexoBlog 进行个性化设置和配置，不过在此之前，需阅读[ Hexo 官方文档](https://hexo.io/zh-cn/docs/)，对 Hexo 有基本的完整的认识。
+本文记录和讲解一下我的 HexoBlog 是如何一步一步被部署至 Github Pages 上的，可供大家参考。部署完成后可参考我的下一篇文章《我的 HexoBlog 的诞生（二）》对自己的 HexoBlog 进行个性化设置和配置，不过在此之前，需阅读[ Hexo 官方文档](https://hexo.io/zh-cn/docs/)，对 Hexo 有基本的完整的认识。
 
 <!-- more -->
 
@@ -33,19 +31,19 @@ categories:
 6. 打开<存储 HexoBlog 的文件夹>，在空白处点鼠标的右键，选择 Git Bash Here 进入终端；
 7. 安装 cnpm 提高下载速度，以后下载插件都可用 cnpm（即将下载某一个插件的命令中的 npm 改为 cnpm）。在终端输入如下命令，回车，等待 cnpm 下载完成；
 
-    ```bash
-    npm install -g cnpm --registry=http://registry.npm.taobao.org
-    ```
+ ```bash
+npm install -g cnpm --registry=http://registry.npm.taobao.org
+```
 
 8. 在终端输入如下命令，回车，等待 hexo-cli 下载完成，完成后，可输入`hexo -v`查看相关版本信息；
 
-    ```bash
-    cnpm install -g hexo-cli
-    ```
+```bash
+cnpm install -g hexo-cli
+```
 
 9. 在终端输入`hexo init`，等待，可在<存储 HexoBlog 的文件夹>中看到生成了如下图所示的文件。
 
-    ![初始文件](https://image.ql-isaac.cn/My_HexoBlog_with_NexT(1)/%E5%88%9D%E5%A7%8B%E6%96%87%E4%BB%B6.png)
+![初始文件](https://image.ql-isaac.cn/My_HexoBlog_with_NexT(1)/%E5%88%9D%E5%A7%8B%E6%96%87%E4%BB%B6.png)
 
 ### 本地部署我的 HexoBlog
 
@@ -55,29 +53,29 @@ categories:
 
 11. 安装 Hexo 的 Git 插件。终端输入如下命令，回车，等待下载完成。
 
-    ```bash
-    cnpm install --save hexo-deployer-git
-    ```
+```bash
+cnpm install --save hexo-deployer-git
+```
 
 12. 编辑 Hexo 的配置文件：
 
-    ```diff
-    # 本行为<存储 HexoBlog 的文件夹>\_config.yml 的第 97 行（随着 Hexo 的不断更新，本行对应在你的 _config.yml 中不一定是第 97 行，请以实际情况为准）
-    # Deployment
-    ## Docs: https://hexo.io/docs/deployment.html
-    deploy:  
-    -  type: ''
-    ```
+```diff
+# 本行为<存储 HexoBlog 的文件夹>\_config.yml 的第 97 行（随着 Hexo 的不断更新，本行对应在你的 _config.yml 中不一定是第 97 行，请以实际情况为准）
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:  
+-  type: ''
+```
     
-    ```diff
-    # 本行为<存储 HexoBlog 的文件夹>\_config.yml 的第 97 行（随着 Hexo 的不断更新，本行对应在你的 _config.yml 中不一定是第 97 行，请以实际情况为准）
-    # Deployment
-    ## Docs: https://hexo.io/docs/deployment.html
-    deploy:  
-    +  type: git  
-    +  repo: 
-    +   github: git@github.com:<自己的 Github 用户名>/<自己的 Github 用户名>.github.io.git,master        
-    ```
+```diff
+# 本行为<存储 HexoBlog 的文件夹>\_config.yml 的第 97 行（随着 Hexo 的不断更新，本行对应在你的 _config.yml 中不一定是第 97 行，请以实际情况为准）
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:  
++  type: git  
++  repo: 
++   github: git@github.com:<自己的 Github 用户名>/<自己的 Github 用户名>.github.io.git,master        
+```
 
 13. 在终端输入`hexo g -d`，回车，进行博客的最终操作——生成静态文件后立即部署到 Github Pages 中；
 14. [大功告成](https://ql-isaac.github.io)（将 ql-isaac 替换成自己的 Github 用户名）。

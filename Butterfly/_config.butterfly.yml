@@ -580,7 +580,7 @@ display_mode: light
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: true
+  enable: false
   field: site # site/post
   title-prefix-icon: '\f863'
   title-prefix-icon-color: '#F47466'

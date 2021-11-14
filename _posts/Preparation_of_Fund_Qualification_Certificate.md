@@ -1,10 +1,9 @@
 ---
 title: 基金从业资格证备考
 date: 2021-06-19 19:07:07
+cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Preparation_of_Fund_Qualification_Certificate/fund.png
 tags: 基金
 ---
-
-　　基金从业资格证备考。
 
 <!-- more -->
 

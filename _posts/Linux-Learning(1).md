@@ -9,7 +9,7 @@ categories:
  - Linux 从入门到实践
 ---
 
-　　操作系统作为软件的软件，实在是重中之重。
+操作系统作为软件的软件，实在是重中之重。
 
 <!-- more -->
 
@@ -17,7 +17,7 @@ categories:
 
 ### 安装 VMware pro 15
 
-　　下载[学习版](https://www.52pojie.cn/thread-1026907-1-1.html)，安装步骤不多说了，只是有一点建议，也是我装软件的原则：能不装C盘就别装C盘。
+下载[学习版](https://www.52pojie.cn/thread-1026907-1-1.html)，安装步骤不多说了，只是有一点建议，也是我装软件的原则：能不装C盘就别装C盘。
 
 ### [下载 CentOS 7.7(1908) 系统映像](http://mirrors.aliyun.com/centos/7.7.1908/isos/x86_64/)
 
@@ -27,4 +27,4 @@ categories:
 
 1. VMware pro 15安装完成后，启动，点击创建新的虚拟机；
 
-    ![创建新的虚拟机](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Linux-Learning(1)/创建新的虚拟机.png)
+![创建新的虚拟机](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Linux-Learning(1)/创建新的虚拟机.png)

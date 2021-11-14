@@ -4,14 +4,14 @@ date: 2020-01-24 22:53:32
 updated: 2021-02-21 19:03:49
 cover: https://image.ql-isaac.cn/Setup-bro.png
 tags:
- - Windows 10 企业版 LTSC
- - Hexo v4.2.0
  - NexT v7.7.0
+ - Hexo v4.2.0
+ - Windows 10 企业版 LTSC
 categories: 
  - 我的 HexoBlog 的诞生
 ---
 
-　　本文记录和讲解一下我的 HexoBlog 是如何个性化设置和配置的，可供大家参考，我会持续更新，保持和[我的 HexoBlog ](https://ql-isaac.github.io)的同步。
+本文记录和讲解一下我的 HexoBlog 是如何个性化设置和配置的，可供大家参考，我会持续更新，保持和[我的 HexoBlog ](https://ql-isaac.github.io)的同步。
 
 <!-- more -->
 
@@ -19,13 +19,13 @@ categories:
 
 ## 重要提示
 
-　　个性化设置和配置了一处自己的 HexoBlog，可以通过本地部署的方式（即在<存储 HexoBlog 的文件夹>下进入终端，输入`hexo s`）查看相应效果，甚至可以直接修改一处，刷新一下查看效果，等都设置和配置完毕了再部署到 Github Pages 中，即在<存储 HexoBlog 的文件夹>下进入终端，执行`hexo clean && hexo g -d`。
+个性化设置和配置了一处自己的 HexoBlog，可以通过本地部署的方式（即在<存储 HexoBlog 的文件夹>下进入终端，输入`hexo s`）查看相应效果，甚至可以直接修改一处，刷新一下查看效果，等都设置和配置完毕了再部署到 Github Pages 中，即在<存储 HexoBlog 的文件夹>下进入终端，执行`hexo clean && hexo g -d`。
 
 ## Hexo 的个性化设置和配置
 
 ### 配置博客站点基本信息
 
-　　编辑 Hexo 的配置文件，个性化配置自己的站点信息即可：
+编辑 Hexo 的配置文件，个性化配置自己的站点信息即可：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\_config.yml的第4行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第4行，请以实际情况为准）
@@ -51,21 +51,21 @@ categories:
 +timezone: 
 ```
 
-　　效果展示：
+效果展示：
 
 ![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/配置博客站点基本信息.png)
 
 ### 下载和设置 NexT 主题
 
-　　原版的 landscape 主题并不好看，在网上搜索了一下，发现 NexT 主题是最受欢迎的。
+原版的 landscape 主题并不好看，在网上搜索了一下，发现 NexT 主题是最受欢迎的。
 
-　　在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令，等待 NexT 下载到当前文件夹下 themes 下 next 下。
+在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令，等待 NexT 下载到当前文件夹下 themes 下 next 下。
 
 ```bash
 git clone https://github.com/theme-next/hexo-theme-next themes/next
 ```
 
-　　下载完成后，编辑 Hexo 的配置文件：
+下载完成后，编辑 Hexo 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\_config.yml的第92行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第92行，请以实际情况为准）
@@ -83,11 +83,45 @@ git clone https://github.com/theme-next/hexo-theme-next themes/next
 +theme: next
 ```
 
+### 更换默认的 Markdown 渲染器[^1]
+
+脚注在 Typora 中使用没问题，可是用默认的 Markdown 渲染器不支持脚注，于是我们执行以下命令换一个渲染器。
+
+```bash
+npm uninstall --save hexo-renderer-marked
+npm install --save hexo-renderer-markdown-it
+```
+
+编辑 Hexo 的配置文件，空一行，追加以下内容。
+
+```
+# Markdown-it config
+## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki
+markdown:
+  # 渲染设置
+  render:
+    # 置为true时，html内容保持不变；置为false时，html内容将被转义成普通字符串
+    html: true
+    # 是否生成与XHTML完全兼容的标签（虽然我不懂是什么意思）
+    xhtmlOut: false
+    # 置为true时，每个换行符都被渲染成一个<br>（即Hexo的默认表现）；置为false时，只有空行才会被渲染为<br>（GFM的默认表现）
+    breaks: true
+    # 是否自动识别链接并把它渲染成链接
+    linkify: true
+    # 是否自动识别印刷格式（意思是把(c)渲染为©这样的）
+    typographer: true
+    # 如果typographer被设置为true，则该选项用于设置将dumb quotes（""）自动替换为smart quotes
+    quotes: '“”‘’'
+  # 设置所需插件
+  plugins:
+    - markdown-it-footnote
+```
+
 ## NexT 的个性化设置与配置
 
 ### 在页脚添加建站年份
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第49行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第49行，请以实际情况为准
@@ -102,13 +136,13 @@ footer:
 +  since: 2020
 ```
 
-　　效果展示：
+效果展示：
 
 ![页脚建站年份](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚建站年份.png)
 
 ### 在页脚添加备案信息
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第78行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第78行，请以实际情况为准
@@ -138,13 +172,13 @@ footer:
     gongan_icon_url:
 ```
 
-　　效果展示：
+效果展示：
 
 ![页脚备案信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚备案信息.png)
 
 ### 选择主题风格
 
-　　编辑 NexT 的配置文件（我保持的默认，喜欢其他的风格的话把前面的 # 去掉即可，注意只能启用一种风格）：
+编辑 NexT 的配置文件（我保持的默认，喜欢其他的风格的话把前面的 # 去掉即可，注意只能启用一种风格）：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\themes\next\_config.yml的第105行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第105行，请以实际情况为准
@@ -155,7 +189,7 @@ scheme: Muse
 #scheme: Gemini
 ```
 
-　　各种主题风格展示：
+各种主题风格展示：
 
 ![Muse](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Muse.png)
 
@@ -167,7 +201,7 @@ scheme: Muse
 
 ### 添加标签和分类菜单项
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第116行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第116行，请以实际情况为准
@@ -205,13 +239,13 @@ menu:
   #commonweal: /404/ || heartbeat
 ```
 
-　　在<存储 HexoBlog 的文件夹>下进入终端，执行如下命令：
+在<存储 HexoBlog 的文件夹>下进入终端，执行如下命令：
 
 ```bash
 hexo new page tags
 ```
 
-　　编辑生成的 index.md：
+编辑生成的 index.md：
 
 ```diff
 ---
@@ -228,13 +262,13 @@ date: 2020-01-24 22:20:25
 ---
 ```
 
-　　在<存储 HexoBlog 的文件夹>下进入终端，执行如下命令：
+在<存储 HexoBlog 的文件夹>下进入终端，执行如下命令：
 
 ```bash
 hexo new page categories
 ```
 
-　　编辑生成的 index.md：
+编辑生成的 index.md：
 
 ```diff
 ---
@@ -251,7 +285,7 @@ date: 2020-01-24 22:21:09
 ---
 ```
 
-　　编辑文章模板文件（为<存储 HexoBlog 的文件夹>下 scaffolds 下 post.md）：
+编辑文章模板文件（为<存储 HexoBlog 的文件夹>下 scaffolds 下 post.md）：
 
 ```diff
 ---
@@ -262,17 +296,17 @@ tags:
 ---
 ```
 
-　　以后想写文章（执行`hexo new post <自定义名>`，编辑相应生成的<自定义名>.md）时，只需自定义 tags 和 categories 的值（注意键值之间有空格），该文章就会在标签页面和分类页面被标记和分类起来。
+以后想写文章（执行`hexo new post <自定义名>`，编辑相应生成的<自定义名>.md）时，只需自定义 tags 和 categories 的值（注意键值之间有空格），该文章就会在标签页面和分类页面被标记和分类起来。
 
 ### 加入豆瓣页面
 
-　　在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令安装 hexo-douban 插件。
+在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令安装 hexo-douban 插件。
 
 ```bash
 cnpm install --save hexo-douban
 ```
 
-　　编辑 Hexo 的配置文件，如下：
+编辑 Hexo 的配置文件，如下：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\_config.yml的第104行（随着Hexo的不断更新，本行对应在你的_config.yml中不一定是第104行，请以实际情况为准
@@ -291,7 +325,7 @@ cnpm install --save hexo-douban
 +  timeout: 10000
 ```
 
-　　添加图书、电影和游戏菜单项。编辑 NexT 的配置文件：
+添加图书、电影和游戏菜单项。编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的116行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第116行，请以实际情况为准
@@ -314,7 +348,7 @@ menu:
 +  games: /games || gamepad
 ```
 
-　　编辑 NexT 的中文语言文件（为<存储 HexoBlog 的文件夹>下 themes 下 next 下 languages 下 zh-CN.yml）：
+编辑 NexT 的中文语言文件（为<存储 HexoBlog 的文件夹>下 themes 下 next 下 languages 下 zh-CN.yml）：
 
 ```diff
 ---
@@ -412,7 +446,7 @@ symbols_count_time:
 
 ### 侧边栏显示设置（只适合风格 Muse 或 Mist）
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第155行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第155行，请以实际情况为准
@@ -436,7 +470,7 @@ symbols_count_time:
 
 ### 头像
 
-　　选择一张图片，放在<存储 HexoBlog 的文件夹>下 themes 下 next 下 source 下 images 下，然后编辑 NexT 的配置文件：
+选择一张图片，放在<存储 HexoBlog 的文件夹>下 themes 下 next 下 source 下 images 下，然后编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第169行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第169行，请以实际情况为准
@@ -463,7 +497,7 @@ avatar:
 
 ### 添加联系方式
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第181行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第181行，请以实际情况为准
@@ -511,7 +545,7 @@ social:
 
 ### 添加友情链接
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第214行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第214行，请以实际情况为准
@@ -527,7 +561,7 @@ links:
 +  <标题3>: <地址3>
 ```
 
-　　演示视频：
+演示视频：
 
 <video id="video2" preload controls loop style="height: 100%;width: 100%;object-fit: cover;"></video>
 <script>
@@ -544,7 +578,7 @@ links:
 
 ### Use icon instead of the symbol # to indicate the tag at the bottom of the post
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第272行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第272行，请以实际情况为准
@@ -558,13 +592,13 @@ links:
 +tag_icon: true
 ```
 
-　　效果展示：
+效果展示：
 
 ![tag](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/tag.png)
 
 ### 设置文本对齐方式为左对齐
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第344行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第344行，请以实际情况为准
@@ -586,7 +620,7 @@ text_align:
 
 ### 代码块设置
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第362行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第362行，请以实际情况为准
@@ -622,7 +656,7 @@ codeblock:
 
 ### 回到顶部按钮设置
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第375行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第375行，请以实际情况为准
@@ -646,7 +680,7 @@ back2top:
 
 ### 在页面顶部显示浏览进度
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第382行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第382行，请以实际情况为准
@@ -672,7 +706,7 @@ reading_progress:
 
 ### 在右上角添加渲染本站的源码仓库传送门
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第399行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第399行，请以实际情况为准
@@ -694,7 +728,7 @@ github_banner:
 
 ### 字体
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第419行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第419行，请以实际情况为准
@@ -782,7 +816,7 @@ font:
 
 ### 优雅地查看图片
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第533行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第533行，请以实际情况为准
@@ -800,7 +834,7 @@ font:
 
 ### 开启图片懒加载
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第542行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第542行，请以实际情况为准
@@ -818,13 +852,13 @@ font:
 
 ### 添加 Valine 评论系统
 
-　　Valine 是基于 LeanCloud 的，首先需要[注册 LeanCloud 账号](https://leancloud.cn/dashboard/login.html)，注意需要验证邮箱，注册成功后进入控制台，需要先实名认证，认证成功后，点击创建应用，新应用名称就填 Valine，这个随便，选择开发版，点击创建，点击存储图标，点击创建 Class，Class 名称填 Comment，添加，再点击创建 Class，Class 名称填 Counter，添加，创建 Class 成功后如下图。
+Valine 是基于 LeanCloud 的，首先需要[注册 LeanCloud 账号](https://leancloud.cn/dashboard/login.html)，注意需要验证邮箱，注册成功后进入控制台，需要先实名认证，认证成功后，点击创建应用，新应用名称就填 Valine，这个随便，选择开发版，点击创建，点击存储图标，点击创建 Class，Class 名称填 Comment，添加，再点击创建 Class，Class 名称填 Counter，添加，创建 Class 成功后如下图。
 
 ![](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/创建Class.png)
 
-　　点击左边的设置，点击安全中心，服务开关里仅打开数据存储服务，Web 安全域名中填写自己的博客地址，保存，点击左侧应用 keys，获取到<自己的 App ID>和<自己的 App key>。
+点击左边的设置，点击安全中心，服务开关里仅打开数据存储服务，Web 安全域名中填写自己的博客地址，保存，点击左侧应用 keys，获取到<自己的 App ID>和<自己的 App key>。
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第578行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第578行，请以实际情况为准
@@ -916,7 +950,7 @@ valine:
 
 ###  开启 busuanzi 统计
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第725行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第725行，请以实际情况为准
@@ -948,13 +982,13 @@ busuanzi_count:
 
 ### 添加本地搜索功能
 
-　　在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令安装 hexo-generator-searchdb 模块。
+在<存储 HexoBlog 的文件夹>下进入终端，输入如下命令安装 hexo-generator-searchdb 模块。
 
 ```bash
 cnpm install --save hexo-generator-searchdb
 ```
 
-　　开启本地搜索功能。编辑 NexT 的配置文件：
+开启本地搜索功能。编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第753行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第753行，请以实际情况为准
@@ -992,7 +1026,7 @@ local_search:
 
 ### 设置 Note tag
 
-　　编辑 NexT 的配置文件：
+编辑 NexT 的配置文件：
 
 ```diff
 # 本行为<存储HexoBlog的文件夹>\themes\next\_config.yml的第798行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第798行，请以实际情况为准
@@ -1033,3 +1067,5 @@ note:
 [lixint](https://lixint.github.io/)
 
 [dragonbaby308](http://www.dragonbaby308.com/)
+
+[^1]: [为Hexo博客添加脚注插件](https://zhanghuimeng.github.io/post/add-footnote-plugin-for-hexo-blog/)
