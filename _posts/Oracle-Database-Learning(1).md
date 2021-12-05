@@ -5,7 +5,7 @@ cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Oracle-Database-Learni
 tags:
  - Oracle Database 11g Release 2
  - Windows 10 专业版
- - VMware® Workstation 15 Pro(15.5.0 build-14665864)
+ - VMware® Workstation 15 Pro
 categories:
  - Oracle 数据库从入门到精通
 ---

@@ -5,7 +5,7 @@ cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/Java.
 tags:
  - JDK 9.0.4
  - Windows 10 专业版
- - VMware® Workstation 15 Pro(15.5.0 build-14665864)
+ - VMware® Workstation 15 Pro
 categories:
  - Java 从入门到实践
 ---

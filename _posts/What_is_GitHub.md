@@ -2,8 +2,6 @@
 title: 什么是 GitHub？
 date: 2021-08-14 16:52:10
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/GitHub.png
-tag:
- - GitHub
 categories: 
  - Git 和 GitHub 从入门到实践
 ---
@@ -130,5 +128,20 @@ GitHub 上的效果图：
 
 ## Fork
 
-GitHub是一个宝库，每当发现一个有趣的仓库，我们不仅仅会去点一个Star（收藏）或Watch（关注），我们还会去Fork一下该开源仓库，这样，该仓库会被克隆一份成为自己的仓库，我们之后就可以独立地对这份自己的仓库进行更改，甚至可以以某次更改向原仓库发起拉取请求，成为原仓库的贡献者，不过这都是后话了，我们今天是想解决的是，我们Fork了某一仓库后，原仓库是不断有作者在更新，自己的仓库也想获得这些更新怎么办？以下是解决方案：
+GitHub是一个宝库，每当发现一个有趣的仓库，我们不仅仅会去点一个 Star（收藏）或 Watch（关注），我们还会去 Fork 一下该开源仓库：
+
+![Fork](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/Fork.png)
+
+这样，该仓库会被克隆一份成为自己的仓库：
+
+![自己的仓库](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/自己的仓库.png)
+
+之后原仓库是不断有作者在更新，自己的仓库也想获得这些更新怎么办？其实很简单，如下图，这里正是在提示你原仓库的 main 分支已经超前了 13 次提交。
+
+![upstream](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/upstream.png)
+
+我们只需要点击右侧的 Fetch upstream 从原仓库进行拉取，这样自己这边的仓库也是最新的了：
+
+![fetch](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/fetch.png)
+
 

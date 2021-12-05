@@ -6,9 +6,8 @@ cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Clou
 tags:
  - frp v0.37.1
  - Raspberry Pi OS with desktop
- - TencentCloud Lighthouse
 categories:
- - 内网穿透
+ - TencentCloud Lighthouse
 ---
 
 上回说到，我辛辛苦苦白忙活了一趟后发现配置太低服务根本跑不起来，奈何高配置的又太贵，于是决定买个树莓派玩玩，搞个自建服务器，但前提是需要内网穿透。
@@ -19,7 +18,7 @@ categories:
 
 字面理解，想必大家已经猜到内网穿透是干嘛的了。自己有一台服务器，如何才能向互联网提供服务呢，对于一般个人来说，唯一的方法就是内网穿透，而相应的方案稍微查一查也能发现有许多，我选择的是开源软件——[frp](https://github.com/fatedier/frp)搭配腾讯云无忧实例的方案。
 
-简单说下原理，frp 分为服务端（frps）和客户端（frpc）两部分，frps 部署在腾讯云无忧实例中，frpc 部署在自建服务器中，启动本地服务后，frp 可以把本地服务的端口映射为无忧实例的端口，这样，客户端和无忧实例的端口通信就相当于与本地服务的端口通信。
+简单说下原理，frp 分为服务端（frps）和客户端（frpc）两部分，frps 部署在腾讯云无忧实例中，frpc 部署在自建服务器中，启动本地服务后，frp 可以将本地服务的端口映射到无忧实例的某一端口，这样，客户端和无忧实例的端口通信就相当于与本地服务的端口通信。
 
 ## 安装 frps
 
@@ -97,7 +96,7 @@ LimitNOFILE=1048576
 WantedBy=multi-user.target
 ```
 
-复制 frps.service 到指定路径下：
+复制 frps.service 到指定目录（没有请自建）：
 
 ```bash
 sudo cp ~/frp_0.37.1_linux_amd64/systemd/frps.service /usr/lib/systemd/system
@@ -124,7 +123,7 @@ vim ~/Document/frp_0.37.1_linux_arm/frpc.ini
 ```diff
 [common]
 -server_addr = 127.0.0.1
-+server_addr = 119.91.70.149
++server_addr = <无忧实例的公网IP>
 server_port = 7000
 +authentication_method = token
 +token = <一串字符>
@@ -183,5 +182,11 @@ sudo systemctl enable --now frpc
 
 ## 验证
 
-[^1]: [Authenticating the Client](https://github.com/fatedier/frp#authenticating-the-client)
+以上 frps 和 frpc 都安装上后，默认是已经将树莓派的 SSH 服务的 22 端口映射到了无忧实例的 6000 端口。我在任何一台联网的机器上，都可以执行以下命令或者使用 SSH 连接工具去连接我的树莓派。
+
+```
+ssh -p 6000 pi@<无忧实例的公网IP>
+```
+
+[^1]:[Authenticating the Client](https://github.com/fatedier/frp#authenticating-the-client)
 

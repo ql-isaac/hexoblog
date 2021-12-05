@@ -3,7 +3,6 @@ title: 我的第一个 npm 包？
 date: 2021-09-15 19:00:00
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_First_Npm_Package/npm.jpg
 tags:
- - npm
  - jsdelivr
 categories:
  - 我的 HexoBlog 的诞生

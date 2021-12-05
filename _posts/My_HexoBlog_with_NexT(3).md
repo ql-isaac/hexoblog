@@ -4,7 +4,6 @@ date: 2020-01-24 22:53:39
 cover: https://image.ql-isaac.cn/Blogging-bro.png
 tags:
  - Typora
- - Markdown
  - Hexo v4.2.0
  - Windows 10 企业版 LTSC
 categories:
@@ -98,9 +97,5 @@ Markdown 是一种轻量级的标记语言，类似于 HTML，但 Markdown 的�
 ```bash
 cnpm install --save hexo-tag-dplayer
 ```
-
-## 卸载掉 cnpm
-
-
 
 [^1]: [菜鸟教程](https://www.runoob.com/markdown/md-tutorial.html)

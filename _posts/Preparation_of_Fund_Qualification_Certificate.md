@@ -5,6 +5,8 @@ cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Preparation_of_Fund_Qu
 tags: 基金
 ---
 
+人怕入错行，女怕嫁错郎。
+
 <!-- more -->
 
 ## 投资管理基础
@@ -65,6 +67,8 @@ tags: 基金
 ### 财务报表分析
 
 ### 货币的时间价值与利率
+
+
 
 ### 常用的描述性统计概念
 

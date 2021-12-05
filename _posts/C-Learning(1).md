@@ -4,7 +4,7 @@ date: 2020-02-13 19:56:24
 cover: https://image.ql-isaac.cn/C从入门到精通（一）.jpg
 tags:
  - Ubuntu 18.04 LTS
- - VMware® Workstation 15 Pro(15.5.0 build-14665864)
+ - VMware® Workstation 15 Pro
 categories: 
  - C 从入门到精通
 ---

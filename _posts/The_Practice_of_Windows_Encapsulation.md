@@ -1,12 +1,12 @@
 ---
-title: Windows 封装实践
+title: Windows 10 封装实践
 date: 2021-08-29 15:40:25
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/The_Practice_of_Windows_Encapsulation/The_Practice_of_Windows_Encapsulation.png
 tags:
  - 优启通 v3.5
  - Easy Sysprep v5.19.802.282 Release1
  - Windows 10 专业版
- - VMware® Workstation 15 Pro(15.5.0 build-14665864)
+ - VMware® Workstation 15 Pro
 categories:
  - Windows 封装
 ---

@@ -4,7 +4,7 @@ date: 2020-02-03 16:36:28
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Linux-Learning(1)/Linux.jpg
 tags:
  - CentOS 7.7(1908)
- - VMware® Workstation 15 Pro(15.5.0 build-14665864)
+ - VMware® Workstation 15 Pro
 categories:
  - Linux 从入门到实践
 ---

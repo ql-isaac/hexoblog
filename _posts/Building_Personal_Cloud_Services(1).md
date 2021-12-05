@@ -4,9 +4,9 @@ date: 2021-09-08 11:03:53
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
  - code-server v3.11.1
- - TencentCloud Lighthouse
+ - Ubuntu 18.04 LTS
 categories:
-- 我的 HexoBlog 的诞生
+- TencentCloud Lighthouse
 ---
 
 静态网站的弊端就是不能随时随地的更新，这是我一直以来的痛。
@@ -33,7 +33,7 @@ Codespaces 是 GitHub 推出的在线编辑器，简单点说，就是可以实�
 
 我抓住网页端 VsCode 这一关键词，果然搜到了这个开源项目 [code-server](https://github.com/cdr/code-server)，那么，我之前买的腾讯云无忧实例就有用武之地了。
 
-SSH 方式登录实例，我的实例是 Ubuntu 18.04，执行如下命令，其中 $VERSION 替换为版本号。
+SSH 方式登录实例，我的实例是 Ubuntu 18.04 的，执行如下命令，其中 $VERSION 替换为版本号。
 
 ```bash
 curl -fOL https://github.com/cdr/code-server/releases/download/v$VERSION/code-server_$VERSION_amd64.deb
@@ -79,20 +79,27 @@ dev.ql-isaac.cn {
 }
 ```
 
-最后重启 Caddy 服务。
+最后重启 Caddy 服务：
 
 ```bash
 sudo systemctl reload caddy
 ```
 
-这时，就可以通过域名公网访问了。
+这时，就可以通过域名公网访问了：
 
 ![公网访问](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/公网访问.png)
 
-以上的密码可以编辑 config.yaml 设定。
+以上的密码可以打开 config.yaml 查看：
+
+```bash
+cat ~/.config/code-server/config.yaml
+```
+
+或者自己设定密码，$USER 替换为你自己的用户名：
 
 ```bash
 vim ~/.config/code-server/config.yaml
+sudo systemctl restart code-server@$USER
 ```
 
 手机端也可以用：

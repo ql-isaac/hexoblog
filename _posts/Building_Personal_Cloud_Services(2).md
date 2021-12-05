@@ -4,10 +4,14 @@ date: 2021-10-03 19:48:18
 updated: 2021-10-06 20:44:00
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
- - Atlassian
- - TencentCloud Lighthouse
+ - Jira Software v8.13.11
+ - Confluence v7.13.1
+ - MySQL v5.7.35
+ - MySQL Connector/J v5.1.49
+ - JDK 8u301
+ - Ubuntu 18.04 LTS
 categories:
- - 项目管理
+ - TencentCloud Lighthouse
 ---
 
 工作的机会，接触到 [Atlassian 公司](https://www.atlassian.com/)旗下的多款软件产品，虽然不是开源的，虽然不是免费的，但是好用啊，无论是对个人还是企业来说。
