@@ -6,7 +6,7 @@ on:
 env:
   TZ: Asia/Shanghai
 jobs:
-  Butterfly-build:
+  www-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,16 +16,16 @@ jobs:
         with:
           node-version: '12.14.0'
           cache: 'npm'
-          cache-dependency-path: Butterfly/package-lock.json
+          cache-dependency-path: www/package-lock.json
       - name: Install dependencies
         run: |
-          cd Butterfly/
+          cd www/
           npm install
       - name: Deploy
         run: |
-          rm -f Butterfly/source/_posts
-          cp -r _posts/ Butterfly/source/_posts/
-          cd Butterfly/
+          rm -f www/source/_posts
+          cp -r _posts/ www/source/_posts/
+          cd www/
           npm run build
           cd public/
           git config --global init.defaultBranch master
@@ -36,7 +36,7 @@ jobs:
           git commit -m "Site updated" -q
           git push -f -q "https://${{secrets.GH_TOKEN}}@${{secrets.GH_REF_BUTTERFLY}}" master
           git push -f -q "https://${{ secrets.CD_USER }}:${{secrets.CD_TOKEN}}@${{secrets.CD_REF_BUTTERFLY}}" master
-  NexT-build:
+  blog-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -46,16 +46,16 @@ jobs:
         with:
           node-version: '12.14.0'
           cache: 'npm'
-          cache-dependency-path: NexT/package-lock.json
+          cache-dependency-path: blog/package-lock.json
       - name: Install dependencies
         run: |
-          cd NexT/
+          cd blog/
           npm install
       - name: Deploy
         run: |
-          rm -f NexT/source/_posts
-          cp -r _posts/ NexT/source/_posts/
-          cd NexT/
+          rm -f blog/source/_posts
+          cp -r _posts/ blog/source/_posts/
+          cd blog/
           npm run build
           cd public/
           git config --global init.defaultBranch master
