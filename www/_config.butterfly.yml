@@ -860,6 +860,7 @@ inject:
   - <script defer data-pjax src="/js/wow_init.js"></script>
   - <script defer src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
   - <script defer src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@latest/source/js/issues.min.js"></script>
+  - <script src="/js/mourning.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work
