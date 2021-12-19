@@ -3,9 +3,9 @@ title: 我的第一个 npm 包？
 date: 2021-09-15 19:00:00
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_First_Npm_Package/npm.jpg
 tags:
- - jsdelivr
+  - jsdelivr
 categories:
- - 我的 HexoBlog 的诞生
+  - 我的 HexoBlog 的诞生
 ---
 
 npm，即 Node Package Manager，是随同 NodeJS 一起安装的包管理工具，本质是一个软件注册表。
@@ -41,4 +41,3 @@ npm init
 ```bash
 npm publish
 ```
-

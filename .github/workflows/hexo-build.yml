@@ -14,8 +14,8 @@ jobs:
       - name: Install Node.js v12.14.0
         uses: actions/setup-node@v2
         with:
-          node-version: '12.14.0'
-          cache: 'npm'
+          node-version: "12.14.0"
+          cache: "npm"
           cache-dependency-path: www/package-lock.json
       - name: Install dependencies
         run: |
@@ -44,8 +44,8 @@ jobs:
       - name: Install Node.js v12.14.0
         uses: actions/setup-node@v2
         with:
-          node-version: '12.14.0'
-          cache: 'npm'
+          node-version: "12.14.0"
+          cache: "npm"
           cache-dependency-path: blog/package-lock.json
       - name: Install dependencies
         run: |

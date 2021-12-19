@@ -4,10 +4,10 @@ date: 2021-10-13 12:53:21
 updated: 2021-11-13 12:53:21
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
- - frp v0.37.1
- - Raspberry Pi OS with desktop
+  - frp v0.37.1
+  - Raspberry Pi OS with desktop
 categories:
- - TencentCloud Lighthouse
+  - TencentCloud Lighthouse
 ---
 
 上回说到，我辛辛苦苦白忙活了一趟后发现配置太低服务根本跑不起来，奈何高配置的又太贵，于是决定买个树莓派玩玩，搞个自建服务器，但前提是需要内网穿透。
@@ -110,7 +110,7 @@ sudo systemctl enable --now frps
 
 ## 安装 frpc
 
-SSH 连接树莓派4B，执行`uname -i`，是 armv71，应该下载 arm 版本的，如下图。
+SSH 连接树莓派 4B，执行`uname -i`，是 armv71，应该下载 arm 版本的，如下图。
 
 ![arm](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/arm.png)
 
@@ -188,5 +188,4 @@ sudo systemctl enable --now frpc
 ssh -p 6000 pi@<无忧实例的公网IP>
 ```
 
-[^1]:[Authenticating the Client](https://github.com/fatedier/frp#authenticating-the-client)
-
+[^1]: [Authenticating the Client](https://github.com/fatedier/frp#authenticating-the-client)

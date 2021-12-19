@@ -4,14 +4,14 @@ date: 2021-10-03 19:48:18
 updated: 2021-10-06 20:44:00
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
- - Jira Software v8.13.11
- - Confluence v7.13.1
- - MySQL v5.7.35
- - MySQL Connector/J v5.1.49
- - JDK 8u301
- - Ubuntu 18.04 LTS
+  - Jira Software v8.13.11
+  - Confluence v7.13.1
+  - MySQL v5.7.35
+  - MySQL Connector/J v5.1.49
+  - JDK 8u301
+  - Ubuntu 18.04 LTS
 categories:
- - TencentCloud Lighthouse
+  - TencentCloud Lighthouse
 ---
 
 工作的机会，接触到 [Atlassian 公司](https://www.atlassian.com/)旗下的多款软件产品，虽然不是开源的，虽然不是免费的，但是好用啊，无论是对个人还是企业来说。
@@ -75,8 +75,8 @@ vim ~/.bashrc
 ```
 #Set Oracle Jdk environment
 export JAVA_HOME=/usr/lib/jdk/jdk1.8.0_301
-export JRE_HOME=${JAVA_HOME}/jre  
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export JRE_HOME=${JAVA_HOME}/jre
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
 export PATH=${JAVA_HOME}/bin:$PATH
 ```
 
@@ -211,11 +211,13 @@ Jira 也可以使用 5.1 版本的 JDBC driver[^5]，那就不用再下了。
 ```bash
 mkdir ~/Atlassian/jirasoftware
 ```
+
 2. 解压压缩包到安装目录：
 
 ```bash
 tar -xzf ~/Atlassian/atlassian-jira-software-8.13.11.tar.gz -C ~/Atlassian/jirasoftware
 ```
+
 3. 复制下载好的 MySQL JDBC Drive 到相应目录：
 
 ```bash
@@ -290,7 +292,7 @@ export JIRA_HOME=~/Atlassian/jirasoftware/jirasoftware-home
 +        -->
 ```
 
-要使用 Candy 代理，需要将 HTTPS 代理连接器放开，同时设置端口为8081（8080 已经用于本系列第一篇中的 code-server 服务了），代理域名设为 proj.ql-isaac.cn：
+要使用 Candy 代理，需要将 HTTPS 代理连接器放开，同时设置端口为 8081（8080 已经用于本系列第一篇中的 code-server 服务了），代理域名设为 proj.ql-isaac.cn：
 
 ```diff
 #本行为~/Atlassian/jirasoftware/atlassian-jira-software-8.13.11-standalone/conf/server.xml的第62行（随着Jira Software的不断更新，本行对应在你的server.yml中不一定是第62：行，请以实际情况为准）
@@ -350,7 +352,7 @@ proj.ql-isaac.cn {
 
 {% note info %}
 
-编辑 Caddyfile 和重启 Caddy 服务请见[本系列第一篇](https://blog.ql-isaac.cn/2021/09/08/Building_Personal_Cloud_Services(1)/#code-server[1][2])
+编辑 Caddyfile 和重启 Caddy 服务请见[本系列第一篇](<https://blog.ql-isaac.cn/2021/09/08/Building_Personal_Cloud_Services(1)/#code-server[1][2]>)
 
 {% endnote %}
 
@@ -388,13 +390,8 @@ cd ~/Atlassian/jirasoftware/atlassian-jira-software-8.13.11-standalone/bin
 看了一下轻量无忧计划 2h4g 的费用，告辞，本次搭建失败。后面考虑自建服务器吧，玩玩树莓派？
 
 [^1]: [A Quick Guide to Using the MySQL APT Repository](https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/)
-
 [^2]: [Database Setup For MySQL](https://confluence.atlassian.com/doc/database-setup-for-mysql-128747.html)
-
 [^3]: [Connecting Jira applications to MySQL 5.7](https://confluence.atlassian.com/adminjiraserver0813/connecting-jira-applications-to-mysql-5-7-1027137456.html)
-
 [^4]: [Database JDBC Drivers](https://confluence.atlassian.com/doc/database-jdbc-drivers-171742.html)
-
 [^5]: [Supported platforms](https://confluence.atlassian.com/adminjiraserver0813/supported-platforms-1027137429.html)
-
 [^6]: [Installing Jira applications on Linux from Archive File](https://confluence.atlassian.com/adminjiraserver0813/installing-jira-applications-on-linux-from-archive-file-1027137443.html)

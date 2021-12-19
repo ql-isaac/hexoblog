@@ -4,11 +4,10 @@ date: 2020-01-24 22:53:32
 updated: 2021-02-21 19:03:49
 cover: https://image.ql-isaac.cn/Setup-bro.png
 tags:
- - NexT v7.7.0
- - Hexo v4.2.0
- - Windows 10 企业版 LTSC
-categories: 
- - 我的 HexoBlog 的诞生
+  - NexT v7.7.0
+  - Hexo v5.2.0
+categories:
+  - 我的 HexoBlog 的诞生
 ---
 
 本文记录和讲解一下我的 HexoBlog 是如何个性化设置和配置的，可供大家参考，我会持续更新，保持和[我的 HexoBlog ](https://ql-isaac.github.io)的同步。
@@ -48,12 +47,12 @@ categories:
 +keywords: 学习与生活
 +author: ql-isaac
 +language: zh-CN
-+timezone: 
++timezone:
 ```
 
 效果展示：
 
-![配置博客站点基本信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/配置博客站点基本信息.png)
+![配置博客站点基本信息](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/配置博客站点基本信息.png>)
 
 ### 下载和设置 NexT 主题
 
@@ -138,7 +137,7 @@ footer:
 
 效果展示：
 
-![页脚建站年份](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚建站年份.png)
+![页脚建站年份](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚建站年份.png>)
 
 ### 在页脚添加备案信息
 
@@ -174,7 +173,7 @@ footer:
 
 效果展示：
 
-![页脚备案信息](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚备案信息.png)
+![页脚备案信息](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/页脚备案信息.png>)
 
 ### 选择主题风格
 
@@ -191,13 +190,13 @@ scheme: Muse
 
 各种主题风格展示：
 
-![Muse](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Muse.png)
+![Muse](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Muse.png>)
 
-![Mist](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Mist.png)
+![Mist](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Mist.png>)
 
-![Pisces](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Pisces.png)
+![Pisces](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Pisces.png>)
 
-![Gemini](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Gemini.png)
+![Gemini](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/Gemini.png>)
 
 ### 添加标签和分类菜单项
 
@@ -483,6 +482,7 @@ avatar:
   # If true, the avatar will be rotated with the cursor.
 -  rotated: false
 ```
+
 ```diff
 # 本行为<存储 HexoBlog 的文件夹>\themes\next\_config.yml的第169行（随着NexT的不断更新，本行对应在你的_config.yml中不一定是第169行，请以实际情况为准
 # Sidebar Avatar
@@ -564,6 +564,7 @@ links:
 演示视频：
 
 <video id="video2" preload controls loop style="height: 100%;width: 100%;object-fit: cover;"></video>
+
 <script>
   if (Hls.isSupported()) {
     var video2 = document.getElementById('video2');
@@ -594,7 +595,7 @@ links:
 
 效果展示：
 
-![tag](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/tag.png)
+![tag](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/tag.png>)
 
 ### 设置文本对齐方式为左对齐
 
@@ -854,7 +855,7 @@ font:
 
 Valine 是基于 LeanCloud 的，首先需要[注册 LeanCloud 账号](https://leancloud.cn/dashboard/login.html)，注意需要验证邮箱，注册成功后进入控制台，需要先实名认证，认证成功后，点击创建应用，新应用名称就填 Valine，这个随便，选择开发版，点击创建，点击存储图标，点击创建 Class，Class 名称填 Comment，添加，再点击创建 Class，Class 名称填 Counter，添加，创建 Class 成功后如下图。
 
-![](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/创建Class.png)
+![](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/My_HexoBlog_with_NexT(2)/创建Class.png>)
 
 点击左边的设置，点击安全中心，服务开关里仅打开数据存储服务，Web 安全域名中填写自己的博客地址，保存，点击左侧应用 keys，获取到<自己的 App ID>和<自己的 App key>。
 
@@ -948,7 +949,7 @@ valine:
   #post_meta_order: 0
 ```
 
-###  开启 busuanzi 统计
+### 开启 busuanzi 统计
 
 编辑 NexT 的配置文件：
 
@@ -1068,4 +1069,4 @@ note:
 
 [dragonbaby308](http://www.dragonbaby308.com/)
 
-[^1]: [为Hexo博客添加脚注插件](https://zhanghuimeng.github.io/post/add-footnote-plugin-for-hexo-blog/)
+[^1]: [为 Hexo 博客添加脚注插件](https://zhanghuimeng.github.io/post/add-footnote-plugin-for-hexo-blog/)

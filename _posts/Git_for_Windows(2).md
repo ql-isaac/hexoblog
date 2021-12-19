@@ -3,7 +3,7 @@ title: Git for Windows(2)
 date: 2021-08-22 16:14:00
 cover: https://image.ql-isaac.cn/Git_for_Windows.jpg
 categories:
-- Git for Windows
+  - Git for Windows
 ---
 
 来记录一下 Git for Windows 的使用。
@@ -29,7 +29,7 @@ ssh-keygen -t rsa -f ~/.ssh/<自定义 SSH key 文件名>
 +Host github.com
 +    HostName github.com
 +    PreferredAuthentications publickey
-+    IdentityFile ~/.ssh/id_rsa     
++    IdentityFile ~/.ssh/id_rsa
 +Host <自定义别名>
 +    HostName github.com
 +    PreferredAuthentications publickey
@@ -38,7 +38,7 @@ ssh-keygen -t rsa -f ~/.ssh/<自定义 SSH key 文件名>
 
 3. 以后在以 SSH 方式克隆 GitHub 小号时，将原来的地址@后面的域名改为以上的自定义别名即可。
 
-- - - 
+---
 
 如下图，`git clone`很慢怎么办？
 

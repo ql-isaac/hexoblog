@@ -4,11 +4,11 @@ date: 2021-11-11 17:00:00
 updated: 2021-11-11 22:00:00
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
- - frp v0.37.1
- - code-server v3.12.0
- - Ubuntu 18.04.4 LTS
+  - frp v0.37.1
+  - code-server v3.12.0
+  - Ubuntu 18.04.4 LTS
 categories:
- - TencentCloud Lighthouse
+  - TencentCloud Lighthouse
 ---
 
 腾讯云的这个 1h2g 无忧实例，一个月 15 元还是贵了点，计划 22 年 1 月 25 日到期之后就不续费了，还是新用户最划算。
@@ -19,11 +19,11 @@ categories:
 
 腾讯云在双十一推出智惠云集活动，下图这个轻量应用服务器实在是太香了，可是我已经不符合要求了，于是邀请来一位符合条件的小伙伴来买，我们两共用，买的时候镜像还是选择 Ubuntu 18.04。
 
-![智惠云集活动](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/What_is_GitHub/智惠云集活动.jpg)
+![智惠云集活动](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/智惠云集活动.jpg)
 
 ## 迁移 code-server
 
-直接下载安装最新版本的安装包，再安装Caddy。具体安装方式和[之前](https://blog.ql-isaac.cn/2021/09/08/Building_Personal_Cloud_Services(1)/#code-server)完全一样。
+直接下载安装最新版本的安装包，再安装 Caddy，具体安装方式和[之前](<https://blog.ql-isaac.cn/2021/09/08/Building_Personal_Cloud_Services(1)/#code-server>)完全一样。
 
 code-server 所有的用户数据都在某一目录下[^1]。我们 SSH 连接无忧实例，将该目录打包压缩得到 code-server.tar.gz：
 
@@ -50,7 +50,7 @@ tar -zxf code-server.tar.gz
 
 ## 迁移 frps
 
-参考[当时的安装方式](https://blog.ql-isaac.cn/2021/10/13/Building_Personal_Cloud_Services(3)/#%E5%AE%89%E8%A3%85-frps)，迁移方式其实很简单：直接将目录 frp_0.37.1_linux_amd64 转移过来，复制里面的 frps.service 到指定路径下，启用并启动服务。
+参考[当时的安装方式](<https://blog.ql-isaac.cn/2021/10/13/Building_Personal_Cloud_Services(3)/#%E5%AE%89%E8%A3%85-frps>)，迁移方式其实很简单：直接将目录 frp_0.37.1_linux_amd64 转移过来，复制里面的 frps.service 到指定路径下，启用并启动服务。
 
 经过测试，发现 frps.service 启动不起来，查看下日志发现权限不足：
 

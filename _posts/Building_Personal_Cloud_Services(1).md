@@ -3,10 +3,10 @@ title: 建立个人云服务（一）
 date: 2021-09-08 11:03:53
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/建立个人云服务.png
 tags:
- - code-server v3.11.1
- - Ubuntu 18.04 LTS
+  - code-server v3.11.1
+  - Ubuntu 18.04 LTS
 categories:
-- TencentCloud Lighthouse
+  - TencentCloud Lighthouse
 ---
 
 静态网站的弊端就是不能随时随地的更新，这是我一直以来的痛。
@@ -107,5 +107,4 @@ sudo systemctl restart code-server@$USER
 ![手机端](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Building_Personal_Cloud_Services/手机端.jpg)
 
 [^1]: [code-server 安装](https://github.com/cdr/code-server/blob/main/docs/install.md#debian-ubuntu)
-    
 [^2]: [code-server 指导](https://github.com/cdr/code-server/blob/main/docs/guide.md#using-lets-encrypt-with-caddy)

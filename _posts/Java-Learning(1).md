@@ -3,11 +3,11 @@ title: Java 从入门到实践（一）
 date: 2020-02-06 16:03:27
 cover: https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/Java.jpg
 tags:
- - JDK 9.0.4
- - Windows 10 专业版
- - VMware® Workstation 15 Pro
+  - JDK 9.0.4
+  - Windows 10 专业版
+  - VMware® Workstation 15 Pro
 categories:
- - Java 从入门到实践
+  - Java 从入门到实践
 ---
 
 Java——面向对象编程语言的领军者！
@@ -28,7 +28,7 @@ Java——面向对象编程语言的领军者！
 
 [下载 JDK 9.0.4](https://pan.baidu.com/s/1R0Y6nDqlYxKvelV3dAtekQ)，提取码：ua1e，下好后安装，安装路径可以自定义，公共 JRE 可装可不装，如下图，我这次装一装。
 
-![安装](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/安装.png)
+![安装](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/安装.png>)
 
 ### 配置系统环境变量
 
@@ -36,7 +36,7 @@ Java——面向对象编程语言的领军者！
 
 如下图，在系统变量栏中找到 Path 变量，点击编辑，点击新建，键入 %JAVA_HOME%\bin，确定。运行 CMD，键入 java，发现系统识别了 java 命令。
 
-![Path](https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/Path.png)
+![Path](<https://cdn.jsdelivr.net/gh/isaac-ql/post-images-1/Java-Learning(1)/Path.png>)
 
 ## String（字符串）
 
@@ -44,4 +44,4 @@ Java——面向对象编程语言的领军者！
 
 ## 参考
 
-[黑马 Java 零基础入门到就业_Java 基础（IDEA 版本）](https://www.bilibili.com/video/BV1Lf4y1U7Cz?p=9)
+[黑马 Java 零基础入门到就业\_Java 基础（IDEA 版本）](https://www.bilibili.com/video/BV1Lf4y1U7Cz?p=9)

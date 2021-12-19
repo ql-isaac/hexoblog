@@ -3,18 +3,18 @@ title: Python 从入门到实践（一）
 date: 2020-01-27 18:09:17
 cover: https://image.ql-isaac.cn/Python.png
 tags:
- - Visual Studio Code
- - Python v3.8.1
- - Windows 10 企业版 LTSC
-categories: 
- - Python 从入门到实践
+  - Visual Studio Code
+  - Python v3.8.1
+  - Windows 10 企业版 LTSC
+categories:
+  - Python 从入门到实践
 ---
 
 在当今的环境下 Python 逐渐成为一门热门的语言，作为一门有着 30 年发展历史的编程语言，其在数据分析领域以及人工智能领域发挥着重要作用。Python 是基于 C 语言，一诞生就具备了完善的语法，其给程序员最直观的印象是——它的简洁性。
 
 <!-- more -->
 
-## Python特点
+## Python 特点
 
 1. 语法简单灵活；
 2. 规范化代码；
@@ -29,38 +29,38 @@ categories:
 
 前往[ Python 官网](https://www.python.org/)下载最新版 Python，需要说明的是，Python2.x 和 Python3.x 之间存在较大差异，在开发中一般都使用 Python3.x，本次使用的版本为 3.8.1。
 
-![最新版Python下载](https://image.ql-isaac.cn/Python-Learning(1)/最新版Python下载.png)
+![最新版Python下载](<https://image.ql-isaac.cn/Python-Learning(1)/最新版Python下载.png>)
 
 下载完成后运行安装程序，勾选 Add Python 3.8 to PATH，点击 Customize installation，点击 Next，点击 Install，等待安装完成。按下 Windows+R 组合键，输入 CMD 进入命令行窗口，输入 python，发现可进入 Python 交互式环境，如下图。
 
-![Python 交互式环境](https://image.ql-isaac.cn/Python-Learning(1)/Python交互式环境.png)
+![Python 交互式环境](<https://image.ql-isaac.cn/Python-Learning(1)/Python交互式环境.png>)
 
-文本编辑器到底哪家强？我推荐 Visual Studio Code。[前往官网](https://code.visualstudio.com/)，点击Download for Windows，下载完成后运行安装程序，下一步即可，但建议到下图这一步时勾选上这三个选项，等待安装完成。安装完成后进入 Visual Studio Code，点击左边第五个图标，搜索 chinese，如下图，点击 Install 安装简体中文包，安装完成后点击 Restart Now，仍然点击左边第五个图标，搜索 python，点击第一个，安装。
+文本编辑器到底哪家强？我推荐 Visual Studio Code。[前往官网](https://code.visualstudio.com/)，点击 Download for Windows，下载完成后运行安装程序，下一步即可，但建议到下图这一步时勾选上这三个选项，等待安装完成。安装完成后进入 Visual Studio Code，点击左边第五个图标，搜索 chinese，如下图，点击 Install 安装简体中文包，安装完成后点击 Restart Now，仍然点击左边第五个图标，搜索 python，点击第一个，安装。
 
-![勾选](https://image.ql-isaac.cn/Python-Learning(1)/勾选.png)
+![勾选](<https://image.ql-isaac.cn/Python-Learning(1)/勾选.png>)
 
-![安装简体中文包](https://image.ql-isaac.cn/Python-Learning(1)/勾选.png安装简体中文包.png)
+![安装简体中文包](<https://image.ql-isaac.cn/Python-Learning(1)/勾选.png安装简体中文包.png>)
 
 ## Python 学习起步
 
 虽然 Python 拥有交互式环境，但是无论如何，程序是需要定义在源文件之中的，Python 源文件的后缀为 py。
 
-新建一个学习文件夹，打开 Visual Studio Code，打开文件夹，如下图，选择学习文件夹（也可以直接右键学习文件夹，选择通过Code 打开），再新建文件夹，命名为 20200203（以当天的年月日命名），在该文件夹下新建文件，命名为 hello_world.py，文件中输入以下一行代码，Ctrl+S 保存。
+新建一个学习文件夹，打开 Visual Studio Code，打开文件夹，如下图，选择学习文件夹（也可以直接右键学习文件夹，选择通过 Code 打开），再新建文件夹，命名为 20200203（以当天的年月日命名），在该文件夹下新建文件，命名为 hello_world.py，文件中输入以下一行代码，Ctrl+S 保存。
 
 ```python
 print("Hello,world!")
 ```
 
-![打开文件夹](https://image.ql-isaac.cn/Python-Learning(1)/打开文件夹.png)
+![打开文件夹](<https://image.ql-isaac.cn/Python-Learning(1)/打开文件夹.png>)
 
 点击右上角运行图标，可看到学习任何一个编程语言第一个程序的运行结果，如下图。
 
-![第一个程序](https://image.ql-isaac.cn/Python-Learning(1)/第一个程序.png)
+![第一个程序](<https://image.ql-isaac.cn/Python-Learning(1)/第一个程序.png>)
 
 ## 注释
 
--  单行注释：`# [注释内容]`
--  多行注释：`'''[多行注释内容]'''`或`"""[多行注释内容]"""`
+- 单行注释：`# [注释内容]`
+- 多行注释：`'''[多行注释内容]'''`或`"""[多行注释内容]"""`
 
 ## 变量（对象）
 
@@ -135,7 +135,7 @@ Hello,ql!
 - 变量名不能包含空格，但可用下划线代替；
 - 不要将 Python 关键字用做变量名，注意将 Python 内置函数用做变量名时，虽然不会导致错误但将覆盖这些函数；
 - 变量名应即简短又具有描述性。例如：name 比 n 好，student_name 比 s_n 好，name_length 比 length_of_persons_name;
-- 慎用小写字母i和大写字母 O，因为它们可能被人错看成数字 1 和 0。
+- 慎用小写字母 i 和大写字母 O，因为它们可能被人错看成数字 1 和 0。
 
 ## 常用数据类型
 
@@ -321,7 +321,7 @@ Python:"Hello,world!"
         Python:"Hello,ql!"
 ```
 
-### 函数input()
+### 函数 input()
 
 利用函数 input()，Python 可以接受通过键盘输入的字符串类型的数据
 
@@ -487,14 +487,14 @@ print(str(num_a)+"+"+str(num_b)+"="+str(result))
 
 #### 格式化输出标记
 
-| 标记 |                 描述                 | 标记 |                描述                 |
-| :--: | :----------------------------------: | :--: | :---------------------------------: |
-|  %c  |          输出单个字符字符串          |  %s  |             输出字符串              |
-|  %d  |               输出整形               |  %f  |       输出浮点型，可设置精度        |
-|  %e  | 以科学计数法格式输出，使用小写字母 e |  %E  | 以科学计数法格式输出，使用大写字母E |
-|  %g  |           %f 和 %e 的简写            |  %G  |           %f 和 %E 的简写           |
-|  %u  |            输出无符号整型            |  %o  |         输出无符号八进制数          |
-|  %x  |         输出无符号十六进制数         |  %X  |  输出无符号十六进制数（大写字母）   |
+| 标记 |                 描述                 | 标记 |                 描述                 |
+| :--: | :----------------------------------: | :--: | :----------------------------------: |
+|  %c  |          输出单个字符字符串          |  %s  |              输出字符串              |
+|  %d  |               输出整形               |  %f  |        输出浮点型，可设置精度        |
+|  %e  | 以科学计数法格式输出，使用小写字母 e |  %E  | 以科学计数法格式输出，使用大写字母 E |
+|  %g  |           %f 和 %e 的简写            |  %G  |           %f 和 %E 的简写            |
+|  %u  |            输出无符号整型            |  %o  |          输出无符号八进制数          |
+|  %x  |         输出无符号十六进制数         |  %X  |   输出无符号十六进制数（大写字母）   |
 
 范例：格式化输出标记（新建文件 format1.py）
 
@@ -516,7 +516,7 @@ ql 今年 23 岁，我的个人博客地址：https://ql-isaac.github,io，我�
 
 |  标记   |          描述          | 标记 |                           描述                            |
 | :-----: | :--------------------: | :--: | :-------------------------------------------------------: |
-|    *    |  定义宽度或小数点精度  |  #   | 在八进制数前面显示零（0），在十六进制数前面显示“0x”或“0X” |
+|   \*    |  定义宽度或小数点精度  |  #   | 在八进制数前面显示零（0），在十六进制数前面显示“0x”或“0X” |
 |    -    |         左对齐         |  0   |                   显示位数不足时填充 0                    |
 |    +    |   在正数前面显示加号   | m.n  |             m 设置显示总长度，n 设置小数位数              |
 |  空格   | 显示位数不足时填充空格 |      |                                                           |
@@ -581,15 +581,15 @@ ql:Hello,Python!
 
 ### 数学运算符
 
-| 运算符 |   描述   |      范例      |
-| :----: | :------: | :------------: |
-|   +    | 加法计算 |  20 + 15 = 35  |
-|   -    | 减法计算 |  20 - 15 = 5   |
-|   *    | 乘法计算 | 20 * 15 = 300  |
-|   /    | 除法计算 |   20 / 15 =    |
-|   %    | 取模计算 |   10 % 3 = 1   |
-|   **   |  幂运算  | 10 ** 3 = 1000 |
-|   //   | 整除计算 |  10 // 3 = 3   |
+| 运算符 |   描述   |       范例       |
+| :----: | :------: | :--------------: |
+|   +    | 加法计算 |   20 + 15 = 35   |
+|   -    | 减法计算 |   20 - 15 = 5    |
+|   \*   | 乘法计算 |  20 \* 15 = 300  |
+|   /    | 除法计算 |    20 / 15 =     |
+|   %    | 取模计算 |    10 % 3 = 1    |
+|  \*\*  |  幂运算  | 10 \*\* 3 = 1000 |
+|   //   | 整除计算 |   10 // 3 = 3    |
 
 范例：数学运算符（一）（新建文件 arithmetic.py）
 
@@ -611,7 +611,7 @@ print(type(result)) # 只要进行了除法，返回的数据类型就是浮点�
 ```python
 result = (1 + 2) * (4 // 2)
 print(result)
-print(type(result)) 
+print(type(result))
 ```
 
 打印结果：
@@ -623,15 +623,15 @@ print(type(result))
 
 ### 简化赋值运算符
 
-| 运算符 |  范例   |    形如    |
-| :----: | :-----: | :--------: |
-|   +=   | a += b  | a = a + b  |
-|   -=   | a -= b  | a = a - b  |
-|   *=   | a *= b  | a = a * b  |
-|   /=   | a /= b  | a = a / b  |
-|   %=   | a %= b  | a = a % b  |
-|  **=   | a **= b | a = a ** b |
-|  //=   | a //= b | a = a // b |
+| 运算符 |   范例    |     形如     |
+| :----: | :-------: | :----------: |
+|   +=   |  a += b   |  a = a + b   |
+|   -=   |  a -= b   |  a = a - b   |
+|  \*=   |  a \*= b  |  a = a \* b  |
+|   /=   |  a /= b   |  a = a / b   |
+|   %=   |  a %= b   |  a = a % b   |
+| \*\*=  | a \*\*= b | a = a \*\* b |
+|  //=   |  a //= b  |  a = a // b  |
 
 范例：字符串上使用乘法（新建文件 multiplication.py)
 
@@ -788,30 +788,28 @@ print("整形变量地址：%d，浮点型变量地址：%d，两者地址是否
 
 针对分支结构的实现，Python 里有三个关键字：`if`、`elif`（Python 单独提供了该关键字，同 else if）和`else`，三种语法：
 
-- if判断
-
+- if 判断
 
 ```python
 if <布尔表达式>:
     <语句块>
 ```
 
-- if...else判断
-
+- if...else 判断
 
 ```python
 if <布尔表达式>:
     <语句块>
-else:    
+else:
     <语句块>
 ```
 
 - 多条件判断
 
 ```python
-if <布尔表达式>:    
+if <布尔表达式>:
     <语句块>
-elif <布尔表达式>:    
+elif <布尔表达式>:
     <语句块>
 elif <布尔表达式>:
     <语句块>
@@ -842,7 +840,7 @@ else:
 
 循环结构指的就是某段代码重复地执行，在循环结构之中需要定义一个循环的条件，只有在满足循环条件时代码才执行，Python 中循环结构有两种：while 循环和 for 循环。
 
-### while循环
+### while 循环
 
 ```python
 while <循环条件>:
@@ -891,9 +889,9 @@ while num_b < 1000:
 
 ### for 循环
 
-| for 循环                                | for...else 循环                                              |
-| --------------------------------------- | ------------------------------------------------------------ |
-| for <变量> in <序列><br/>    <循环语句> | for <变量> in <序列><br/>    <循环语句><br/>else:<br/>    <循环语句执行完毕后的语句> |
+| for 循环                             | for...else 循环                                                                |
+| ------------------------------------ | ------------------------------------------------------------------------------ |
+| for <变量> in <序列><br/> <循环语句> | for <变量> in <序列><br/> <循环语句><br/>else:<br/> <循环语句执行完毕后的语句> |
 
 ## 序列
 
@@ -971,7 +969,7 @@ print(infos[-1])
 C/C++、Java、Python
 ```
 
-范例：通过列表保存多种数据类型（新建文件python.py)
+范例：通过列表保存多种数据类型（新建文件 python.py)
 
 ```python
 infos = ["Python","简洁",["列表元素 1","列表元素 2","列表元素 3"]] # 数据的意义：编程语言（Python），特点（简洁），举例（列表）
@@ -1085,10 +1083,9 @@ lambda 表达式即 lambda 函数，
 
 ### callable()
 
-callabl() 
+callabl()
 
 ```
 print("input()是否可以调用：%s" % callable(input))
 def get_info
 ```
-

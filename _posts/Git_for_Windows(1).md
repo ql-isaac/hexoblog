@@ -3,7 +3,7 @@ title: Git for Windows(1)
 date: 2021-01-03 15:27:43
 cover: https://image.ql-isaac.cn/Git_for_Windows.jpg
 categories:
-- Git for Windows
+  - Git for Windows
 ---
 
 来记录一下 Git for Windows 的使用。
@@ -63,4 +63,3 @@ credential helper，凭据帮助器？这是个什么玩意儿？star 一下这�
 Release Notes。
 
 ![Release Notes](https://image.ql-isaac.cn/Git_for_Windows/Release-Notes.png)
-
